@@ -1,0 +1,19 @@
+Unique canonical tags: 11
+Total uses: 1524
+
+433	integração
+211	marketing-eventos
+182	programa-parceiros
+175	lead-pipeline
+157	contrato-comercial
+107	proposta
+89	suporte-escalação
+63	onboarding
+46	homologação
+44	ecossistema-parceiros
+17	competitivo
+
+
+Articles where topic had to fallback to programa-parceiros:
+  kb-delivery-batch-04.md:TRB-002
+  kb-delivery-batch-08.md:HTO-001
