@@ -3,7 +3,7 @@
 **Artefato**: catálogo de customer cases extraído do corpus WhatsApp Wake/parceiros (`store/messages.db`).
 **Data**: 2026-06
 **Fonte**: mensagens de grupo (`chat_jid LIKE '%@g.us'`, texto puro), recortes 2025-06 a 2026-06.
-**Total de casos**: 59
+**Total de casos**: 102
 
 ---
 
@@ -43,6 +43,7 @@ Casos sem evidência suficiente foram omitidos. Empresas que aparecem apenas em 
 5. **Por cenário — Churn e migrações de saída**: CASE-041 a CASE-046
 6. **Por cenário — Prospects em negociação ativa (jun/2026)**: CASE-047 a CASE-050
 7. **B2B, Afiliados e Verticais Especializadas (Editoras)**: CASE-051 a CASE-059
+8. **Lote 2 — Casos descobertos no sweep 06/2026**: CASE-060 a CASE-072
 
 ---
 
@@ -1230,6 +1231,390 @@ Estes casos cobrem duas jornadas adicionais e uma vertical nova que estavam ause
 
 ---
 
+## 7. Lote 2 — Casos descobertos no sweep 06/2026 (CASE-060 a CASE-072)
+
+Este bloco consolida os casos identificados no gap-sweep de junho/2026 (`docs/wake-customer-cases-gap-list.md`). Cobertura: clientes ativos, leads em rotação multi-agência, migrações em andamento, churn e go-lives recentes que não estavam no recorte original de 59 casos.
+
+---
+
+### CASE-060 — Gregory (moda + Metakosmos provador virtual)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Gregory |
+| **Setor** | moda feminina |
+| **Tipo de operação** | B2C — varejo de moda |
+| **Status** | ✓ ativo (em produção, com case público de provador virtual Metakosmos) |
+| **URL** | `gregory.com.br` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-05-18; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | Anymarket (painel + acessos sendo configurados em 03/2026) |
+| **Parceiros envolvidos** | Metakosmos (provador virtual em produção), Floui (sustentação técnica — chamado de subida de produtos com SLA contratual de 15 dias), Anymarket |
+| **Tags** | `audience-sales`, `integração` |
+| **Data da última menção** | 2026-05-28 |
+
+**Situação:** Gregory aparece como **case de provador virtual Metakosmos em produção** (Wake & Metakosmos, 2026-05-14: *"Gregory (provador virtual) — gregory.com.br/produto/blazer-xadrez-terracota-165222"*). Em 2026-03-11, o feature já era citado como referência para outros prospects: *"Também daria pra colocar o provador igual da Gregory, só não sei como funcionam os custos dos testes"* (Wake & Metakosmos). A conta tem **agenda direta com o CEO** sendo trabalhada — em 2026-03-11 a CS Anymarket reportou *"Daqui a pouquinho terei uma agenda com o CEO da Gregory e a Anymarket é um dos temas que está na pauta"*. Sustentação técnica está com a **Floui** (chamado de subida de produtos discutido em 2026-05-26 — Floui defendeu SLA contratual de 15 dias). Houve report de 2026-05-22 (Tropa de Elite 3): *"Gregory ta uma merda não tem nada configurado"* — sinal de fricção operacional que precisava de retomada com Cintia (contato interno) — seguido de feedback positivo em 2026-05-20 (Wake+Omni360+Affys): *"o Gregory deu um feedback positivo"*.
+
+**Solução:** Wake Commerce + **Metakosmos provador virtual (mK Fashion+)** em produção + Anymarket para marketplaces + Floui como agência de sustentação. Contatos comerciais capturados em Tropa de Elite 3, 2026-04-15: Gregory Duca Giovanelli (Gerente Operações), Luiza Duca Giovanelli Vergara (Gerente Administrativa), Andrea Duca (Diretora) — confidenciais.
+
+**Resultado:** Provador virtual operacional e usado como case Metakosmos. Revenue share Metakosmos por Gregory **nunca foi cobrada** até 02/2026 (WAKE | Coordenação, 2026-02-20: *"Metakosmos por exemplo nunca cobramos por Gregory. (Foco para Março)"*) — sinal de gap operacional no fluxo de cobrança de revenue share de parceiros tech.
+
+**Insights / lessons:**
+- **Único case Metakosmos em produção** explicitamente citado como referência no corpus — usar em pitch a marcas de moda que perguntam sobre provador virtual / IA visual.
+- Wake **deixou de cobrar revenue share Metakosmos por Gregory** durante todo o ciclo — sinal para Coordenação Parcerias revisar fluxo de billing de revenue share de parceiros tech (não só agência).
+- Sustentação **Floui defendendo SLA contratual de 15 dias** para subida de produtos — referência útil de baseline de SLA agência em projetos Wake.
+
+---
+
+### CASE-061 — Ave Rara / Averara (moda, Go-Live 05/2026)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Ave Rara (razão social: AVERARA CONFECCOES EIRELI) |
+| **Setor** | moda |
+| **Tipo de operação** | B2C — varejo de moda |
+| **Status** | ✓ ativo — **Go-Live 2026-05-18** |
+| **URL** | `averarabrand.com.br` ✓ confirmado (The Rise of Skywalker 2026-05-18: *"Loja no ar!!! https://www.averarabrand.com.br/"*); ambiente de teste `www3.averarabrand.com.br` |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Simples Inovação (primeiro case da agência — *"Uhuuul, primero case da Simples conosco 🚀"*, 2026-05-19), Stone (TEF + Prateleira Infinita / POS) |
+| **Tags** | `audience-sales`, `proposta` |
+| **Data da última menção** | 2026-06-03 |
+
+**Situação:** Ave Rara assinou Wake Commerce em **fevereiro/2026** (The Rise of Skywalker, 2026-02-12: *"Fechamos Averara"*; 2026-02-26: *"AveRara: 55k MRR + 68.9 Setup"* — forecast de Mavericks/TRoS). Contrato teve atraso de subida para faturamento — 2026-03-02: *"o contrato de averara não subiu ainda pra eles lá pra faturamento. Ta assinado isso já?"*. **Go-Live em 2026-05-18** com ação Family & Friends ativada (cupom interno divulgado em WAKE | Time Parcerias 2026-05-15). Primeiro case operado pela agência **Simples Inovação**. Em 06/2026, **negociação ativa de Prateleira Infinita + integração POS Stone (Connect)** em curso ([work] Wake & Stone, 2026-06-02/03): cliente já opera TEF com Stone e foi orientado a contratar Prateleira Infinita, mas há fricção porque *"nem todas as maquininhas que ele já possui são compatíveis com esse produto"*. Pergunta aberta em Comercial Cross WAKE 2026-06-03: *"quem negociou o prateleira infinita para o cliente AVERARA?"*.
+
+**Solução:** Wake Commerce (R$ 55k MRR + R$ 68,9k setup, conforme forecast 2026-02-26) + Simples Inovação como agência + Stone TEF + projeto Prateleira Infinita em negociação.
+
+**Resultado:** Go-Live operacional desde 2026-05-18. Pendência aberta: alinhamento de compatibilidade de maquininhas Stone para a operação Prateleira Infinita.
+
+**Insights / lessons:**
+- **Primeiro case da agência Simples Inovação** — marco para o programa de canais.
+- Caso operacional para o playbook de **Prateleira Infinita + POS**: a venda da Prateleira Infinita assumiu que o parque de maquininhas atual do cliente seria compatível, o que não foi verdade. **Discovery técnica antes do contrato** deve validar compatibilidade do modelo de POS antes de fechar.
+- Forecast de TRoS captura ticket Commerce relevante (R$ 55k MRR) — referência interna de pricing moda em 2026.
+
+---
+
+### CASE-062 — OffPremium (outlet — Anymarket + Marketplace Blueman)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | OffPremium |
+| **Setor** | varejo / outlet de moda |
+| **Tipo de operação** | B2C — outlet |
+| **Status** | ✓ ativo (em produção, com integração Marketplace Blueman em desenvolvimento) |
+| **URL** | `offpremium.com.br` ✓ confirmado (Wake + Marketplace Blueman 2025-10-29, link de produto teste) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | Anymarket + **Marketplace Blueman** (em desenvolvimento — perspectiva otimista 03/2026, realista 04-05/2026, pessimista 06/2026) |
+| **Parceiros envolvidos** | Anymarket, Marketplace Blueman |
+| **Tags** | `audience-cs`, `integração` |
+| **Data da última menção** | 2026-01-28 |
+
+**Situação:** OffPremium é cliente Wake em produção e foi piloto da integração **Marketplace Blueman** via Anymarket. Em 2025-10-29, pedidos teste foram processados via `offpremium.com.br/raquete-slim-basica---blueman---produto-teste-403271-1606992/p`. Em 2025-11-03, a integração tinha gap conhecido: *"esse aqui é OffPremium, mas o ideal era fazer um novo depois que subi uma melhoria, pq lá não tem repasse certo? Ai o pagamento é direto para vcs, e o número título não é o marketPlacePedidoId"* (Wake + Marketplace Blueman). Em 2026-01-28, prazos foram realinhados com a Anymarket: *"Perspectiva otimista: Março / Perspectiva realista: entre Abril e Maio / Perspectiva pessimista: Junho"* — *"esse é um desenvolvimento complexo, integração de dados do pagamento, requer um estudo e desenvolvimento maior"*. Cliente listado junto com **Babado Top** como par pendente de finalização da integração Mercado Livre via Marketplace Blueman.
+
+**Solução:** Wake Commerce + Anymarket + Marketplace Blueman (canal Mercado Livre via hub Blueman). Integração de pagamento + número de título do pedido sendo customizados para fluxo Blueman.
+
+**Resultado:** Em 06/2026 ainda em desenvolvimento (status mais recente: 2026-01-28, sem update posterior no corpus). Validar com account owner se Go-Live final aconteceu na janela pessimista (06/2026).
+
+**Insights / lessons:**
+- Caso operacional do **piloto Marketplace Blueman + Anymarket + Wake** — útil em pitch a outlets que querem operar via hub não-padrão.
+- **Integração de pagamento marketplace tem gap conhecido** quando o repasse vai direto ao lojista e o `marketPlacePedidoId` não é o número de título. Sinalizar em discovery de qualquer marca outlet que use esse modelo.
+- Junto com **Babado Top** forma o par de pilotos Blueman do corpus.
+
+---
+
+### CASE-063 — Eletro Mais (MT) (lead Duo — saindo de OpenCart)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Eletro Mais |
+| **Setor** | varejo eletro (MT) |
+| **Tipo de operação** | B2C — varejo eletro regional |
+| **Status** | ⚠ lead em rotação multi-agência (último contato 2026-01-12, sem resposta) |
+| **URL** | `eletromaismt.com.br` ✓ confirmado (Duo e Wake Parcerias 2025-12-10) |
+| **Plataforma anterior** | OpenCart (6 meses no ar, sem venda) |
+| **ERP** | Santri Sistemas |
+| **Marketplace setup** | — (não vende em marketplaces; só loja física) |
+| **Parceiros envolvidos** | Duo (origem do lead), DRIVEN (rotação) — contato Cristiano |
+| **Tags** | `audience-sales`, `lead-pipeline` |
+| **Data da última menção** | 2026-01-12 |
+
+**Situação:** Eletro Mais entrou como **Oportunidade Canais** (Duo e Wake Parcerias, 2025-11-26 / 2025-12-10 — mensagem padronizada repetida em DRIVEN & Wake e Wake & A&EIGHT B8One): *"Plataforma atual: Open Cart / 1k visitas / mês / Estão com esse e-commerce no ar à 6 meses, porém, sem venda / Canais de venda: Loja física (não vendem nos marketplaces) / ERP: Santri sistemas / Urgência: O quanto antes"*. Em 2026-01-12, DRIVEN reportou: *"Eletromaismt - Cristiano - Marcado para quarta-feira as 14hs"* — agenda marcada mas sem retorno posterior no corpus.
+
+**Solução:** Proposta Wake Commerce para substituir OpenCart, com integração Santri Sistemas (ERP regional — verificar com Solutions se precisa integrador-erp dedicado, já que Santri **não está na taxonomia canônica** de ERPs Wake).
+
+**Resultado:** ⚠ Status final desconhecido após 2026-01-12. Sinal de **lead com urgência alta mas sem fechamento** — vale follow-up.
+
+**Insights / lessons:**
+- Caso clássico de **lojista com e-commerce parado** (6 meses no ar sem venda) — Wake compete com a percepção de fracasso da plataforma anterior, não com a plataforma em si.
+- **Santri Sistemas** é ERP regional fora da taxonomia canônica (`docs/wake-partnership-kb-playbook.md` §2) — precisa ser tratado como ERP customizado / via integrador genérico (Jitterbit, Leanwork, Iota.Hub).
+- Acompanha o lead **Cimafer** (CASE-064) no mesmo formato Oportunidade Canais Duo de 12/2025.
+
+---
+
+### CASE-064 — Cimafer (construção/ferramentas — lead Duo, GMV R$ 1M/mês claim)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Cimafer |
+| **Setor** | construção / ferramentas |
+| **Tipo de operação** | B2C + loja física (omnichannel) |
+| **Status** | ⚠ lead em rotação multi-agência (último contato 2025-12-10) |
+| **URL** | `cimafer.com.br` ✓ confirmado (Duo e Wake Parcerias 2025-12-03/10) |
+| **Plataforma anterior** | **Shopify** (claim do cliente: *"não sente segurança nas vendas online"*) |
+| **ERP** | Boreo |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Duo (origem do lead), DRIVEN, Wake & A&EIGHT (B8One) — contato Geórgia Pires |
+| **Tags** | `audience-sales`, `lead-pipeline` |
+| **Data da última menção** | 2026-01-12 |
+
+**Situação:** Cimafer entrou como **Oportunidade Canais** (Duo e Wake Parcerias, 2025-12-03 / 2025-12-10): *"https://www.cimafer.com.br/ / 13K de visualização / GMV: R$ 1.000.000,00 mensal (esse valor seria total, E-commerce + loja física) / ERP: Boreo / Cliente Shopify, ela gostaria de trocar de plataforma porque não sente segurança nas vendas online"*. Em 2025-12-05, A&EIGHT (B8One) confirmou tentativa de chamar Cimafer. Em 2026-01-12, DRIVEN reportou: *"Cimager [sic] - Gerogia Pires - Não atende o celular e nao responde"* — lead esfriou.
+
+**Solução:** Proposta Wake Commerce em substituição ao Shopify, com integração ERP Boreo (fora da taxonomia canônica — provavelmente requer integrador-erp).
+
+**Resultado:** ⚠ Lead esfriou em 01/2026 (não atende celular, não responde). Não há sinal de fechamento.
+
+**Insights / lessons:**
+- **NB**: o gap-list inicial (`docs/wake-customer-cases-gap-list.md`) classificou Cimafer como migração saindo de **OpenCart** — a evidência em mensagem mostra que a plataforma atual era **Shopify** (Duo e Wake Parcerias, 2025-12-03). Confiar na mensagem.
+- Claim **GMV R$ 1M/mês** combina e-commerce + loja física — útil como referência de TAM em vertical construção, mas validar o split online/offline antes de citar em pitch.
+- **Boreo** é ERP regional fora da taxonomia canônica — caso para Solutions validar integrador genérico antes de prometer integração.
+- Padrão: leads multi-agência em rotação que **esfriam por falta de resposta do cliente** são comuns em ticket médio/alto regional — sugere processo de **qualificação dupla** (Wake + agência) antes de distribuir.
+
+---
+
+### CASE-065 — Brofitwear (moda fitness — primeiro Go-Live Quick Digital, saída VTEX)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Brofitwear |
+| **Setor** | moda fitness |
+| **Tipo de operação** | B2C — varejo de moda fitness |
+| **Status** | ✓ ativo — **Go-Live 2026-05-19** (primeiro Go-Live da Quick Digital) |
+| **URL** | `brofitwear.com.br` ✓ confirmado (Quick Digital & Wake Parcerias 2026-05-19; Wake <> Catus 2025-11-11) |
+| **Plataforma anterior** | **VTEX** (saída em 2025-11) |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Catus (lead inicial em 11/2025 — reativado), **Quick Digital** (agência que fez o Go-Live) |
+| **Tags** | `audience-sales`, `competitivo` |
+| **Data da última menção** | 2026-05-19 |
+
+**Situação:** Brofitwear entrou em 2025-11-11 como reativação de lead via Catus (*"Pode reativar a Brofitwear.com.br como lead por favor? A gente esta tirando eles da Vtex"* — Wake <> Catus). Indicação interna pela Vanessa (WAKE | Time Agência, 2025-11-11). **Assinou Wake Commerce em 2025-10-30** (Mavericks + Comercial Cross WAKE: *"Brofitwear assinado ✍🏻 Commerce (6,1k mrr + 12k setup)"*). **Go-Live em 2026-05-19** anunciado em Quick Digital & Wake Parcerias: *"https://www.brofitwear.com.br/ Primeiro Go Live da Quick 🚀"*.
+
+**Solução:** Wake Commerce (R$ 6,1k MRR + R$ 12k setup) + Quick Digital como agência de implementação.
+
+**Resultado:** Go-Live operacional desde 2026-05-19. **Caso-âncora do programa da Quick Digital** — primeiro projeto entregue pela agência.
+
+**Insights / lessons:**
+- **Migração de saída VTEX → Wake** confirmada em vertical moda fitness — útil em battlecard VTEX.
+- **Caso de marco para a Quick Digital** — usar como prova social ao discutir capacidade de novas agências entregarem Go-Lives em prazo (assinatura 10/2025 → Go-Live 05/2026, ciclo de ~7 meses).
+- Ticket Commerce R$ 6,1k MRR + R$ 12k setup é referência de SMB moda fitness 2025-Q4.
+
+---
+
+### CASE-066 — Casafer (construção/varejo — SAP B1 + WooCommerce migration via Eficaz)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Casafer |
+| **Setor** | construção / varejo de materiais |
+| **Tipo de operação** | B2C + B2B (telefone, WhatsApp, balcão, representantes, LinkedIn) |
+| **Status** | ⚠ lead em qualificação (último contato 2025-06-30) |
+| **URL** | `casafer.com.br` ✓ confirmado (Eficaz <> WAKE, 2025-06-30) |
+| **Plataforma anterior** | **WordPress / WooCommerce** (catálogo, sem vendas efetivas) |
+| **ERP** | **SAP Business One** |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Eficaz (origem do lead), O2 Consultoria (rotação) |
+| **Tags** | `audience-solutions`, `lead-pipeline` |
+| **Data da última menção** | 2025-06-30 |
+
+**Situação:** Lead vindo via SDR em 2025-06-30, distribuído para **Eficaz** e **O2 Consultoria** com o mesmo briefing (Eficaz <> WAKE / O2 Consultoria & Wake): *"Casafer - Commerce - Canais / https://casafer.com.br / Plataforma atual: WordPress / WooCommerce / Canais de vendas: Telefone, WhatsApp, balcão loja, representantes, LinkedIn / ERP: SAP Business One / Comentou que hoje o site está como um catálogo. Efetivamente não tem feito vendas por lá. O que tem incomodado é o desempenho e as dificuldades de integração com o ERP. Faturamento online, está praticamente zerado. Faturamento offline, aprox. de [valor confidencial]"*. Contato: Allan Guimarães (allan@casafer.com.br) — confidencial.
+
+**Solução:** Proposta Wake Commerce + integrador-erp para SAP Business One (Intergate ou LinkToU, conforme taxonomia `docs/wake-partnership-kb-playbook.md` §3.1).
+
+**Resultado:** ⚠ Sem atualização após 2025-06-30. Status final desconhecido.
+
+**Insights / lessons:**
+- Padrão **SAP B1 + WooCommerce com integração ERP falhando** é replay do mesmo problema visto em cases enterprise — útil em pitch para outros lojistas SAP B1 frustrados com plataforma open-source.
+- Discussão sobre **e-commerce como catálogo (não como canal de venda)** é argumento de venda forte para Wake Commerce — vale documentar em battlecard "WooCommerce/SAP".
+- **Distribuição duplicada para Eficaz e O2** no mesmo dia — caso para discutir governança de carrossel quando o briefing é o mesmo (`audience-pam`).
+
+---
+
+### CASE-067 — Singular Medicamentos (farma — rotação multi-agência)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Singular Medicamentos |
+| **Setor** | farmácia (varejo farma) |
+| **Tipo de operação** | B2C — varejo farma |
+| **Status** | ✓ ativo (em produção, com painel Wake operacional desde 11/2025) |
+| **URL** | `singularmedicamentos.com.br` ✓ confirmado (e-mails em ANYMARKET & WAKE, 2025-11-06) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | Anymarket (painel ativo) |
+| **Parceiros envolvidos** | Nairuz, N1, Cava Digital (rotação multi-agência mencionada no gap-list), LeanWork (App em discovery em 10/2025), BonifiQ (interesse mútuo capturado em 10/2025) |
+| **Tags** | `audience-cs`, `suporte-escalação` |
+| **Data da última menção** | 2026-06-02 |
+
+**Situação:** Singular Medicamentos é cliente Wake **em produção** (painel "SINGULAR MEDICAMENTOS - WAKE", OI 259064779 — ANYMARKET & WAKE, 2025-11-06: pedido de reenvio de login/senha para e-mails @singularmedicamentos.com.br). Em 09/2025 estava sendo qualificado para a corrida de premiação Vindi (Comercial Cross WAKE 2025-09-25: *"Eu estou vendo a Singular medicamentos e não é para setembro"*). Em 10/2025 a LeanWork pediu update de bloqueios em conjunto com **DLK Modas, Luiza Barcelos, YBERA** — sinal de que Singular faz parte do mesmo conjunto de contas indicadas para o **App LeanWork** (Wake & Leanwork, 2025-10-06). Em 2025-10-02, **BonifiQ** reportou interesse mútuo: *"a Singular Medicamentos demonstrou bastante interesse em conhecer vocês"* (Wake & BonifiQ). Em 2026-04-28 foi citada como cliente Caaqui e em 2026-05-05 (Comercial Cross WAKE) pediu-se update de tempo de implantação + agência responsável. Em **2026-06-02** (Duo e Wake Parcerias) abriu thread técnica: *"precisa fazer uma leitura de receita de oculos também, a Singular Medicamentos pede receita/dados do médico, mas é algo mais manual hoje. Temos alguma outra alternativa na plataforma?"* — sinal de **requisito regulatório farma** (validação de receita médica para venda online) que ainda é manual.
+
+**Solução:** Wake Commerce + Anymarket. Rotação multi-agência (Nairuz / N1 / Cava Digital / Caaqui) — confirmar account owner atual com Coordenação Parcerias.
+
+**Resultado:** Ativo. Discovery aberto para **automação de validação de receita médica** (regulatório farma) em 06/2026.
+
+**Insights / lessons:**
+- **Único cliente farma em produção** capturado no recorte com requisito explícito de **validação de receita** — sinal para Solutions/Produto de que há gap funcional para a vertical farma (receita médica + dados do médico ainda manual em 06/2026).
+- Singular convidada para o **evento farma 09/2025** (Wake/Econverse Farma - Vurdere/Leal CRM Bonus 2025-09-23) com **4 convidados** — alto engajamento na vertical farmacêutica relativa ao recorte.
+- Sinal de **rotação multi-agência sem account owner único claro** (Nairuz/N1/Cava/Caaqui/Econverse) — risco de conflito de canal; recomendar consolidação com PAM.
+
+---
+
+### CASE-068 — OG Brindes (B2B brindes — busca por agência de sustentação)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | OG Brindes |
+| **Setor** | brindes corporativos / B2B |
+| **Tipo de operação** | B2B — distribuição de brindes corporativos |
+| **Status** | ⚠ ativo, em busca de agência de sustentação (último update 07/2025) |
+| **URL** | `ogbrindes.com.br` ✓ confirmado (Eficaz <> WAKE, 2025-07-08) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | FG, Série//A, Econverse, Eficaz (indicações de sustentação), Dotkom (CS Dotkom pedindo agenda Wake + cliente em 07/2025) |
+| **Tags** | `audience-pam`, `ecossistema-parceiros` |
+| **Data da última menção** | 2025-07-24 |
+
+**Situação:** OG Brindes pediu **indicação de agências para sustentação** em 2025-06-24 (FG + Wake / Wake <> Série//A / Wake <> Econverse — mensagem replicada): *"Cliente OG Brindes pediu indicação de agências para sustentação"*. Contato comercial: José Carlos Grzybowski, Diretor Geral (jose.carlos@ogbrindes.com.br) — confidencial. Em 2025-07-17, **Dotkom** pediu agenda de call entre Wake + cliente para falar de OG Brindes (Parcerias Dotkom & Wake), agenda marcada para 28/07.
+
+**Solução:** Wake Commerce com agência de sustentação a ser definida (rotação FG / Série//A / Econverse / Eficaz / Dotkom).
+
+**Resultado:** ⚠ Sem update após 2025-07-24. Status atual desconhecido.
+
+**Insights / lessons:**
+- Padrão **cliente Wake pedindo indicação de agência de sustentação** sinaliza que estava operando sem agência fixa — útil para discussões de **governance de account ownership pós Go-Live**.
+- **Múltiplas agências chamadas em paralelo** para o mesmo cliente sem rotação formal — caso para Coordenação Parcerias revisar fluxo de indicação de sustentação.
+- Vertical **B2B brindes corporativos** ainda subdocumentada no catálogo — OG Brindes é o primeiro caso explícito do recorte.
+
+---
+
+### CASE-069 — Biggie / abiggie (lead desqualificado — Shopify→Wake recusado)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Biggie (abiggie) |
+| **Setor** | ? (não identificado no corpus — Shopify SMB) |
+| **Tipo de operação** | B2C |
+| **Status** | ❌ **lead perdido / desqualificado** (cliente não quer migrar, só quer frontend em Shopify) |
+| **URL** | `abiggie.com.br` ✓ confirmado (Wake <> Ge Commerce 2025-10-09) |
+| **Plataforma anterior** | **Shopify** (continua) |
+| **ERP** | Tiny |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Ge Commerce / O2 Consultoria (rotação inicial), **Catus** (agência prejudicada na compensação por lead desqualificado) |
+| **Tags** | `audience-pam`, `lead-pipeline` |
+| **Data da última menção** | 2025-10-28 |
+
+**Situação:** Biggie entrou como **Oportunidade Canais** em 2025-10-09 (Wake <> Ge Commerce / O2 Consultoria & Wake): *"Cliente Shopify / ERP - Tiny / Faturamento: Ainda não esta faturando porque esta no processo de criação do site / A ideia é revisar o layout, estrutura das páginas e também o SEO"*. Em 2025-10-28 (WAKE | Time Agência), a Catus foi citada como prejudicada: *"precisamos compensá-los em dois leads, que direcionamos e são desqualificados. Biggie - (Perdido/Desqualificado) Cliente não quer migrar, só quer alguém para fazer frontend em shopify. Trocamotor - (Perdido/Desqualificado) Cliente queria apenas desenvolver o front na solução atual que ele tem hoje"*.
+
+**Solução:** Não aplicável — lead recusou migração.
+
+**Resultado:** ❌ **Lead desqualificado**. Agência **Catus** sinalizou para compensação por lead falso (junto com Trocamotor — mesmo padrão).
+
+**Insights / lessons:**
+- Caso de **discovery falho na qualificação de canais**: o lead foi distribuído como Oportunidade Canais sem confirmar a intenção de migração da plataforma. **ERP Tiny + Shopify nativo é integração funcional** — não há gancho funcional para forçar troca para Wake.
+- Padrão "**cliente quer só refazer frontend**" em Shopify é sinal claro de **desqualificação antes de distribuir** — caso para playbook de SDR/PAM.
+- **Compensação de agência por lead falso** (Catus, Biggie + Trocamotor) é regra precedente — referência para discussão de SLA de qualidade de lead com canal.
+
+---
+
+### CASE-070 — Unikapro / Unabeleza (churn — migrou para Nuvemshop)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Unikapro (renomeada/refundada como **Unabeleza**) |
+| **Setor** | beleza |
+| **Tipo de operação** | B2C — varejo de beleza |
+| **Status** | ❌ **churn** — migrou para Nuvemshop em 03/2026 |
+| **URL** | `unabeleza.com.br` (nova marca, fora da Wake) |
+| **Plataforma anterior** | Wake (saiu) |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Econverse (citou ausência da Unabeleza em planilha de comissionamento em 01/2026) |
+| **Tags** | `audience-sales`, `competitivo` |
+| **Data da última menção** | 2026-03-27 |
+
+**Situação:** Em 2026-03-27 (WAKE | Time Parcerias), confirmação direta: *"Unikapro, to vendo que virou https://www.unabeleza.com.br/ mas já migrou pra Nuvem"*. A Unabeleza apareceu também em 2026-01-15 (Wake <> Econverse) em discussão de % aplicado em opps fechadas: *"Na planilha não vi os nomes de Kikkaboo - Soneda - Unabeleza"* — sinal de que o relacionamento comercial já estava se desfazendo no 1ºT/2026.
+
+**Solução:** Não aplicável — saída para Nuvemshop.
+
+**Resultado:** ❌ Churn confirmado. Cliente operando em **Nuvemshop** sob nova marca (Unabeleza) em 03/2026.
+
+**Insights / lessons:**
+- **Churn para Nuvemshop** é padrão menos comum no corpus (predominante: VTEX, Shopify, Bagy) — vale registrar para battlecard Nuvemshop.
+- Padrão **rebranding + migração** (Unikapro → Unabeleza + Nuvemshop) sinaliza que a saída foi planejada com tempo, não fricção operacional aguda — investigar com Sales Ops se houve sinal antecipado de NPS/CSAT que pudesse ter previsto.
+- Ausência da Unabeleza em **planilha de comissionamento Econverse** em 01/2026 foi sinal antecedente de 2 meses — caso para Coordenação Parcerias usar ausências de comissionamento como **leading indicator de churn**.
+
+---
+
+### CASE-071 — Empório Bud (lead via Konduto — vinhos/bebidas?)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Empório Bud |
+| **Setor** | ? (não identificado claramente — nome sugere bebidas/cervejas, mas não confirmado) |
+| **Tipo de operação** | B2C |
+| **Status** | ⚠ lead em qualificação (último update 09/2025) |
+| **URL** | `emporiobud.com.br` ✓ confirmado (Konduto & Wake, 2025-09-12) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | **Konduto** (indicação inicial em evento Konduto), Oásis (convite de 07/2025 mencionando contato) |
+| **Tags** | `audience-pam`, `lead-pipeline` |
+| **Data da última menção** | 2025-09-12 |
+
+**Situação:** Empório Bud foi **indicado pela Konduto** em 2025-09-12 (Konduto & Wake): *"Eles pediram minha ajuda para fazer a ponte com vocês em nosso evento. Seguem os dados para entrarem em contato: https://emporiobud.com.br / fernando@emporiobud.com.br / 11 98121-0915 - Fernando Felix / CNPJ: 11.638.545/0001-44"*. Contato anterior em 2025-07-06 (Wake <> Oásis) capturava o mesmo Fernando Felix como "Convite 3" em uma lista de prospects. Em 2025-09-10, WAKE | Time Parcerias pediu: *"Gente, Emporio bud. Preciso de parceiro logístico, pagar.me e conduto"* — sinal de que o discovery estava progredindo (precisava de parceiro logístico + Pagar.me + Konduto). Em 2025-07-01, WAKE | Time Agência reportou: *"to caçando a tal da emporio bud ainda kkkkkkkkkk"* — sinal de dificuldade para encontrar account owner.
+
+**Solução:** Wake Commerce + **Pagar.me** + **Konduto** (antifraude) + parceiro logístico (a definir).
+
+**Resultado:** ⚠ Sem update após 2025-09-12. CNPJ capturado mas status do contrato desconhecido.
+
+**Insights / lessons:**
+- **Konduto como originador de lead** via seu próprio evento (Konduto & Wake) — padrão de **partner-sourced lead** útil para pitch ao programa Konduto.
+- Stack discutida em 2025-09-10 (**Pagar.me + Konduto + logística**) é stack canônica Wake para SMB — referência de "kit completo" mínimo.
+- Caso de **demora para identificar account owner interno** ("to caçando a tal da emporio bud ainda kkkkkkkkkk") é sintoma de fluxo de distribuição confuso quando o lead vem fora do carrossel normal.
+
+---
+
+### CASE-072 — Você Constrói (B2C construção — parent brand do Esplane)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Você Constrói |
+| **Setor** | material de construção / varejo |
+| **Tipo de operação** | B2C — varejo de material de construção (marca-mãe da Esplane CASE-051) |
+| **Status** | ✓ ativo (Anymarket liberado desde 2025-08-22) |
+| **URL** | `voceconstroi.com.br` ✓ confirmado (Eficaz <> WAKE 2025-12-15 / 2026-02-18) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | **Anymarket** (liberado em 2025-08-22) |
+| **Parceiros envolvidos** | Eficaz (sustentação técnica), Auaha (frontend), Anymarket |
+| **Tags** | `audience-cs`, `integração` |
+| **Data da última menção** | 2026-02-18 |
+
+**Situação:** Você Constrói é a **frente B2C** que opera junto com a **Esplane** (CASE-051, B2B) no mesmo grupo. Anymarket foi liberada em 2025-08-22 (ANYMARKET & WAKE: *"Você Constrói já liberado!"* + *"estou na sala com a Você Constrói já"*). A frente B2C tem **chamado técnico crítico ativo** em sustentação via Eficaz: em 2025-12-15 (Eficaz <> WAKE) abriu-se ticket 258709 sobre *"O evento de Purchase está disparando no Meta, mas não está enviando o parâmetro de receita (value) junto. O Meta registra a venda, mas com valor R$ 0,00, o que destrói as métricas de ROAS e a otimização das campanhas"*. Problema voltou após ajuste no front da Auaha em 11/2025 (*"o evento Purchase passou a não contabilizar a receita"*) e em 2026-02-18 ainda estava aberto: *"precisamos de ajuda urgente com o cliente Voce constroi"* — chamado escalado.
+
+**Solução:** Wake Commerce + Anymarket + Eficaz (sustentação) + Auaha (front). Esplane (CASE-051) opera como loja Wake separada para o canal B2B.
+
+**Resultado:** Ativo em produção, mas com **fricção persistente no evento Purchase do Meta** desde 11/2025 — degrada ROAS/atribuição de campanha. Caso técnico ainda aberto em 02/2026.
+
+**Insights / lessons:**
+- Padrão **B2C parent + B2B child como duas lojas Wake separadas** confirmado (Você Constrói + Esplane) — referência canônica para pitch de arquitetura B2B segregada.
+- Caso operacional do **bug recorrente do evento Purchase no Meta com receita zerada** — sinal de gap conhecido na camada de tagueamento headless/Wake quando o front é customizado por terceiros (Auaha). Útil em discovery de qualquer cliente que vá rodar Wake + agência de front externa + Meta Ads.
+- Caso de **escalada urgente** que cruza Wake + Eficaz + Auaha — referência para playbook de **war room** quando o bug atravessa 3 fornecedores.
+
+---
+
 ### Programa de afiliados — referências cruzadas
 
 A Wake não tem "produto de afiliados" separado. Programas de afiliados/influencer marketing são montados sobre **dois recursos da plataforma**:
@@ -1279,6 +1664,713 @@ A referência interna canônica que enumera os três cases de afiliados Wake é 
 | URL `forumconhecimento.com.br` é da Editora Fórum | ⚠ fornecido pelo usuário, não confirmado em mensagens | `%forumconhecimento%` (0 hits) | n/a — URL não citada em mensagens do corpus |
 | URL `negocios.forumconhecimento.com.br` é da Editora Fórum | ⚠ fornecido pelo usuário, não confirmado em mensagens | `%negocios.forumconhecimento%` (0 hits) | n/a |
 | URL da Buddemeyer | ⚠ fornecido pelo usuário, não confirmado em mensagens | n/a | URL não citada nas mensagens analisadas |
+
+---
+
+### Verificação — Lote 2 (CASE-060 a CASE-072)
+
+| Claim | Status | Query (LIKE) | Evidence |
+|---|---|---|---|
+| Gregory roda provador virtual Metakosmos em produção | ✓ verificado | `%Gregory%` (67 hits); `%Gregory%provador%` | Wake & Metakosmos, 2026-05-14 12:35; 2026-03-11 19:38 |
+| Gregory tem sustentação técnica via Floui com SLA contratual de 15 dias | ✓ verificado | `%Gregory%Floui%`; `%SLA%15 dias%` | Floui & Wake, 2026-05-26 12:51 e 17:27 |
+| Wake nunca cobrou revenue share Metakosmos por Gregory até 02/2026 | ✓ verificado | `%Metakosmos%nunca cobramos%` | WAKE \| Coordenação, 2026-02-20 15:16 |
+| Ave Rara teve Go-Live em 2026-05-18 com averarabrand.com.br | ✓ verificado | `%averarabrand%` (14 hits) | The Rise of Skywalker, 2026-05-18 13:55 |
+| Ave Rara foi o primeiro case da agência Simples Inovação | ✓ verificado | `%Averara%primero case%`; `%Simples%Averara%` | Simples Inovação & Wake Parcerias, 2026-05-19 16:11 |
+| Ave Rara fechou Commerce R$ 55k MRR + R$ 68,9k setup em 02/2026 | ✓ verificado | `%AveRara%55k%` | The Rise of Skywalker, 2026-02-26 21:50 |
+| Ave Rara em negociação ativa de Prateleira Infinita + POS Stone em 06/2026 | ✓ verificado | `%AVERARA%prateleira%`; `%Averara%POS%` | Comercial Cross WAKE, 2026-06-03 14:29; [work] Wake & Stone, 2026-06-02/03 |
+| OffPremium é piloto Marketplace Blueman + Anymarket | ✓ verificado | `%OffPremium%` (23 hits); `%offpremium%Blueman%` | Wake + Marketplace Blueman, 2025-10-29 a 2026-01-28 |
+| OffPremium tem gap conhecido no número de título do pedido (não é marketPlacePedidoId) | ✓ verificado | `%OffPremium%marketPlacePedidoId%` | Wake + Marketplace Blueman, 2025-11-03 22:50 |
+| Eletro Mais MT estava saindo de OpenCart com ERP Santri Sistemas | ✓ verificado | `%eletromaismt%`; `%Open Cart%` + `%Santri%` | Duo e Wake Parcerias, 2025-12-10 18:43 |
+| Cimafer saía de Shopify (não OpenCart como sugeria o gap-list) com ERP Boreo | ✓ verificado | `%Cimafer%`; `%Cimafer%Shopify%`; `%Cimafer%Boreo%` | Duo e Wake Parcerias, 2025-12-03 17:21; 2025-12-10 18:43 |
+| Cimafer claim GMV R$ 1M/mês (e-commerce + loja física combinado) | ✓ verificado | `%Cimafer%1.000.000%` | Duo e Wake Parcerias, 2025-12-03 17:21 |
+| Cimafer esfriou em 01/2026 (não atende celular) | ✓ verificado | `%Cimager%não atende%` | DRIVEN & Wake, 2026-01-12 19:45 |
+| Brofitwear fez Go-Live em 2026-05-19 como primeiro Go-Live da Quick Digital | ✓ verificado | `%Brofitwear%Go Live%`; `%Quick%Brofitwear%` | Quick Digital & Wake Parcerias, 2026-05-19 14:03 |
+| Brofitwear saía de VTEX, indicação via Catus | ✓ verificado | `%Brofitwear%Vtex%`; `%Brofitwear%Catus%` | Wake <> Catus, 2025-11-11 12:15 e 12:21 |
+| Brofitwear assinou Commerce R$ 6,1k MRR + R$ 12k setup em 2025-10-30 | ✓ verificado | `%Brofitwear%assinad%` | Mavericks + Comercial Cross WAKE, 2025-10-30 18:15/33 |
+| Casafer saía de WooCommerce com SAP B1 via Eficaz/O2 | ✓ verificado | `%Casafer%WooCommerce%`; `%Casafer%SAP%` | Eficaz <> WAKE / O2 Consultoria & Wake, 2025-06-30 13:15-21 |
+| Singular Medicamentos é cliente Wake em produção com painel ativo | ✓ verificado | `%Singular%Medicamentos%` + `%painel%` | ANYMARKET & WAKE, 2025-11-06 13:26 |
+| Singular Medicamentos tem requisito manual de validação de receita médica | ✓ verificado | `%Singular%receita%` | Duo e Wake Parcerias, 2026-06-02 12:43 |
+| Singular Medicamentos foi indicada para App LeanWork junto com DLK/Luiza Barcelos/YBERA | ✓ verificado | `%Singular%LeanWork%` | Wake & Leanwork, 2025-10-06 14:37 |
+| OG Brindes pediu indicação de agência de sustentação em 06/2025 | ✓ verificado | `%OG Brindes%sustentação%`; `%ogbrindes%agência%` | FG + Wake / Wake <> Série//A / Wake <> Econverse, 2025-06-24 21:35-36 |
+| OG Brindes contato comercial é José Carlos Grzybowski (Diretor Geral) | ✓ verificado em DM | `%Grzybowski%` | FG + Wake, 2025-06-24 21:36 (contato confidencial — não publicar) |
+| Biggie/abiggie foi desqualificado (cliente Shopify+Tiny não quer migrar) | ✓ verificado | `%Biggie%Desqualificado%`; `%abiggie%Shopify%` | WAKE \| Time Agência, 2025-10-28 14:07; Wake <> Ge Commerce, 2025-10-09 19:03 |
+| Catus foi prejudicada e pediu compensação por leads Biggie + Trocamotor desqualificados | ✓ verificado | `%Catus%compensar%Biggie%` | WAKE \| Time Agência, 2025-10-28 14:07 |
+| Unikapro virou Unabeleza e migrou para Nuvemshop em 03/2026 | ✓ verificado | `%Unikapro%Unabeleza%`; `%unabeleza%Nuvem%` | WAKE \| Time Parcerias, 2026-03-27 14:08 |
+| Empório Bud foi indicação Konduto via evento Konduto em 09/2025 | ✓ verificado | `%emporiobud%Konduto%`; `%Emporio bud%` | Konduto & Wake, 2025-09-12 13:06; WAKE \| Time Parcerias, 2025-09-10 17:42 |
+| Você Constrói teve Anymarket liberado em 2025-08-22 | ✓ verificado | `%Você Constrói%liberado%` | ANYMARKET & WAKE, 2025-08-22 15:34 |
+| Você Constrói tem bug recorrente no evento Purchase do Meta (receita zerada) — ticket 258709 aberto em 12/2025 e ainda escalado em 02/2026 | ✓ verificado | `%voceconstroi%Purchase%`; `%Voce constroi%ROAS%` | Eficaz <> WAKE, 2025-12-15 16:43 e 2026-02-18 14:15 |
+| Você Constrói teve ajuste de front feito pela Auaha em 11/2025 que originou o bug | ✓ verificado | `%Voce constroi%Auaha%` | Eficaz <> WAKE, 2026-02-18 14:15 |
+
+**Não escritos** (avaliados durante este sweep mas sem evidência suficiente ou contexto fora de escopo):
+
+| Candidato | Razão | Evidence |
+|---|---|---|
+| Belluno | **Não é cliente** — é parceiro de pagamento (Belluno Pag, `bellunopag.com.br`), avaliado como gateway alternativo / "estepe caso Appmax não aceite" (WAKE \| Time Parcerias, 2026-02-09 19:42-44; Belluno + Wake, 2026-03-26). Grupo dedicado "Belluno + Wake" reflete relacionamento de parceria, não case de customer. | WAKE \| Time Parcerias 2025-07-18 a 2026-06-03; Belluno + Wake 2026-03-26 |
+
+---
+
+## 9. Leads e prospects de Canais — segunda leva (CASE-073–CASE-102)
+
+Esta seção cobre prospects/leads de Canais identificados no sweep de gap analysis (2026-06), tier high-confidence (3+ hits no DB). A maioria são oportunidades distribuídas no modelo carrossel (CASE-049) para 3–5 agências — leads em fase de qualificação ou negociação. Casos com Go-Live ou contrato assinado são marcados explicitamente. Casos sem desfecho confirmado ficam como `⚠ em negociação`, `❌ perdido` ou `⚠ status desconhecido`.
+
+**Fonte**: `docs/wake-customer-cases-gap-list.md` (high-confidence tier, candidatos não cobertos pelos "notable findings" CASE-060–CASE-072).
+
+---
+
+### CASE-073 — Cerealista Express
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Cerealista Express (`cerealistaexpress.com.br`) |
+| **Setor** | alimentos / cereais e mercearia online |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | Magento ✓ verificado |
+| **Visualizações** | 25,5K/mês |
+| **Parceiros envolvidos** | Avocado Tech, Ge Commerce, O2 Consultoria (rotação de canais) |
+| **Data da última menção** | 2026-02-10 |
+
+**Situação:** Lead de Canais distribuído em 2025-11-27 a 3 agências. *"Felipe é Sócio, e atualmente é cliente da Magento. Ele explicou que possui um e-commerce e que a plataforma responsável pelo site já não o satisfaz mais... investiu um valor alto... paga uma mensalidade elevada"* (Wake <> Avocado Tech, 2025-11-27). Status em 2026-01-26: agências aguardando retorno do cliente. Em 2026-02-10, ReclameAqui pergunta *"este cliente roda com vocês?"* — confirmando que ainda não havia migrado.
+
+**Insights:**
+- **Migração Magento → Wake** com dor de custo de manutenção alto e plataforma "engessada".
+- Rotação de 3 agências (Avocado / Ge / O2) deixou o lead esfriar — sinal de falha de follow-up.
+
+---
+
+### CASE-074 — Eletrônica Santana (Grupo)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Grupo Eletrônica Santana — Eletrônica Santana + ES TECH + Dealer Shop (B2B) (`eletronicasantana.com.br`) |
+| **Setor** | varejo eletro / B2C + B2B |
+| **Status** | ✓ ativo |
+| **Parceiros envolvidos** | Ecommerce House (agência), Biso (busca) |
+| **Data da última menção** | 2026-04-08 |
+
+**Situação:** Cliente Wake confirmado em produção. *"O confirmado é Eletrônica Santana, que é nosso cliente"* (Wake & Biso, 2025-09-16). Em 2026-02-03, Ecommerce House anuncia *"Colocamos no ar o novo modelo de PDP do site inteiro da Eletrônica Santana, com foco em melhorar a experiência do cliente, aumentar a conversão e corrigir alguns bugs"*. Em 2026-04-08, vaga aberta para Analista de E-commerce do grupo cuidando das 3 marcas — sinaliza escala da operação.
+
+**Solução:** Wake Commerce com **3 lojas no grupo** (B2C + B2B Dealer Shop) operadas por Ecommerce House. Biso é o parceiro de busca.
+
+**Insights:**
+- Case de **grupo multi-marca varejo eletro com braço B2B** (Dealer Shop) — útil para discoveries com varejistas eletro que querem juntar canais.
+- Caso de **operação contínua via Ecommerce House** — agência ativa publicando releases de PDP.
+
+---
+
+### CASE-075 — Inoxlon
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Inoxlon (`inoxlon.com.br`) |
+| **Setor** | industrial / utensílios em aço inox |
+| **Status** | ⚠ em negociação (sem contato em 2026-02) |
+| **Plataforma anterior** | Climba ✓ verificado |
+| **ERP** | Bling |
+| **Faturamento online** | R$ 200k/mês (GMV) |
+| **Parceiros envolvidos** | Engajar, A&EIGHT (B8One), Cava Digital (carrossel) |
+| **Data da última menção** | 2026-02-23 |
+
+**Situação:** Lead SDR distribuído em 2026-02-12: *"INOXLON- Canais. ERP: Bling. GMV: 200k mês no online. Possui 1 loja física. Chegou na Wake através das campanhas e anúncios do Instagram... cliente da plataforma Climba"* (Wake & A&EIGHT B8One, 2026-02-12). Em 2026-02-19, email de contato deu como inexistente. Em 2026-02-23: *"INOXLON não te respondeu?"* — lead esfriou.
+
+**Insights:**
+- Lead de **inbound (Instagram ads Wake)** que esfriou por dados de contato incorretos.
+- Migração **Climba → Wake** com Bling nativo — qualificação SMB padrão.
+
+---
+
+### CASE-076 — AZ Acessórios (Grupo Cambuci)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | AZ Acessórios (`azacessorios.com.br`) |
+| **Setor** | moda / acessórios — Grupo Cambuci |
+| **Status** | ✓ ativo |
+| **Parceiros envolvidos** | Eficaz (agência) |
+| **Data da última menção** | 2026-03-16 |
+
+**Situação:** Go-Live anunciado em 2025-06-23: *"Saiiuuu pessoal site da AZ acessórios esta no AR, case gigantesco do grupo Cambuci"* (Eficaz <> WAKE, 2025-06-23). Em 2026-03-04, time discute migração para o novo storefront: *"AZ Acessórios, está no novo storefront?"*. Em 2026-03-16, time usa AZ Acessórios como referência em discovery de outro prospect: *"mostrei o site da AZ ACESSÓRIOS"*. Em 2026-03-04, time da AZ visitou o stand Wake (provável evento ECBR/Wake Summit).
+
+**Solução:** Wake Commerce operado pela Eficaz. **Cliente do Grupo Cambuci**.
+
+**Insights:**
+- Case de **referência viva** usado em discoveries de outros prospects (Eficaz é forte em autopeças/acessórios).
+- Conexão Grupo Cambuci ⚠ inferido — relação societária com outros clientes Wake não confirmada no corpus.
+
+---
+
+### CASE-077 — Dallanese Parafusos
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Dallanese Parafusos (`dallanese.com.br`) |
+| **Setor** | industrial / ferramentas e parafusos |
+| **Status** | ❌ sem retorno (lead frio) |
+| **ERP** | Sankhya |
+| **Faturamento online** | R$ 50k/mês |
+| **Parceiros envolvidos** | A&EIGHT (B8One), Duo, Ge Commerce (carrossel) |
+| **Data da última menção** | 2025-07-21 |
+
+**Situação:** Lead SDR distribuído em 2025-06-25: *"Dallanese Parafusos - Commerce - Canais. Necessidade: Migração de e-commerce. ERP: Sankhya. Faturamento online: 50.000. Vendem nos marketplaces / ML. 1 loja física"* (Duo e Wake Parcerias, 2025-06-25). Em 2025-07-15, B8One reporta: *"Sem sucesso em contato com a Dallanese"*. Em 2025-07-21, Duo perguntando *"Dallanese tem algum retorno????"* — sem resposta após.
+
+**Insights:**
+- **ERP Sankhya** precisa integrador (ver playbook §3.1 — Integra.do ou Floui).
+- Padrão **lead distribuído + sem follow-up do cliente** — esfriou em 4 semanas.
+
+---
+
+### CASE-078 — Balletto
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Balletto (`balletto.com.br`) |
+| **Setor** | moda / calçados |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | VTEX ✓ verificado |
+| **ERP** | Sisplan |
+| **Parceiros envolvidos** | O2 Consultoria, 3W, Eficaz (carrossel) |
+| **Data da última menção** | 2025-07-22 |
+
+**Situação:** Lead vindo de **indicação DXP→Commerce** distribuído em 2025-07-11: *"Balletto - Commerce - Canais. Oportunidade vinda de indicação de DXP para Commerce... Migração de VTEX"* (Wake <> 3W, 2025-07-11). Em 2025-07-22, O2 reporta: *"Fiz a apresentação da proposta para a Balletto... Estão considerando a operação do Digital com a Loja Física adicional. Contudo não ficou claro pra mim sobre a integração com o ERP deles Sisplan"* (O2 Consultoria & Wake, 2025-07-22).
+
+**Insights:**
+- **Migração VTEX → Wake** indicada via DXP (produto da própria Wake) — bom canal interno.
+- **ERP Sisplan**: não-nativo, precisa integrador.
+
+---
+
+### CASE-079 — AR15 Sport
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | AR 15 Sport (`ar15sport.com.br`) |
+| **Setor** | esporte / airsoft e equipamentos de lazer |
+| **Status** | ⚠ em negociação (lead frio, sem retorno) |
+| **Plataforma anterior** | Tray ✓ verificado |
+| **Parceiros envolvidos** | E-Plus, Lemoon (carrossel) |
+| **Data da última menção** | 2025-09-29 |
+
+**Situação:** Lead SDR distribuído em 2025-07-22: *"AR15 Sport - Commerce - Canais. Plataforma atual: Tray. Segmento: Air soft e equipamentos de lazer... Necessidade: Migração de solução"* (Wake <> E-Plus, 2025-07-22). Em 2025-09-19 a 2025-09-29, WAKE | Time Agência reporta dificuldade: *"sigo tentando (e sem nem respostas) da AR15"* (2025-09-23).
+
+**Insights:**
+- Vertical **nicho (airsoft)** — útil em pitch a marcas de esporte/outdoor.
+- Tomador de decisão **difícil de engajar** — padrão SMB autodidata.
+
+---
+
+### CASE-080 — Campinas Diesel
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Campinas Diesel (`campinasdiesel.com.br`) |
+| **Setor** | automotivo / peças e diesel |
+| **Status** | ⚠ em negociação |
+| **Parceiros envolvidos** | Catus, Eficaz, Proex (carrossel) |
+| **Data da última menção** | 2025-08-19 |
+
+**Situação:** Lead SDR distribuído em 2025-08-12 via Msam: *"Campinas Diesel... Mensagem original do lead: site com vendas, integracao mercado livre... Hoje trabalham com loja física, e querem um e-commerce B2C e que tenha integr[ação ML]"* (Eficaz <> WAKE, 2025-08-12). Em 2025-08-15, Catus reporta: *"Campinas Diesel: Show, se precisar de algo, conta comigo!"*. Em 2025-08-19, Eficaz lista Campinas Diesel em status report consolidado — em negociação ativa.
+
+**Insights:**
+- Caso **automotivo + integração Mercado Livre** — pitch padrão para autopeças (combinar com Anymarket).
+
+---
+
+### CASE-081 — 7 Oliveiras
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | 7 Oliveiras (`7oliveiras.com.br`) |
+| **Setor** | indústria / alimentos |
+| **Status** | ⚠ em rotação carteira (2026-01) |
+| **Plataforma anterior** | Visual e-commerce ✓ verificado |
+| **ERP** | ZADA |
+| **Faturamento online** | R$ 20k site + R$ 160k marketplaces |
+| **Parceiros envolvidos** | Simples Inovação, Proex, FZ Commerce (carrossel) |
+| **Data da última menção** | 2026-01-22 |
+
+**Situação:** Lead SDR distribuído em 2025-08-18: *"https://www.7oliveiras.com.br/. trabalham com a plataforma Visual e-commerce... a parte dos marketplaces é muito importante p/ eles, pois hoje vende mais por esse canal. Faturamento site: Em torno de 20k. Faturamento marketplaces: 160k. ERP: ZADA"* (Simples Inovação & Wake Parcerias, 2025-08-18).
+
+**Insights:**
+- **GMV majoritariamente em marketplaces** (R$ 160k vs R$ 20k site) — pitch deve enfatizar Anymarket como hub central.
+- **ERP ZADA**: não-nativo, validar integrador antes da proposta.
+
+---
+
+### CASE-082 — Conceito Rouparia
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Conceito Rouparia (`conceitorouparia.com.br`) |
+| **Setor** | moda / multi-marca |
+| **Status** | ⚠ em rotação carteira (2026-01) |
+| **Plataforma anterior** | Loja Integrada ✓ verificado |
+| **ERP** | Datasystem (manter) — integrador 4middleware (via API) |
+| **Faturamento online** | < R$ 300k |
+| **Parceiros envolvidos** | Simples Inovação, FZ Commerce (carrossel) |
+| **Data da última menção** | 2026-01-22 |
+
+**Situação:** Lead SDR distribuído em 2025-09-03: *"Plataforma atual: Loja Integrada. Necessidade: Migração de commerce. usavam a Neomode para integrar, pois o ERP é o Datasystem e a idéia é manter ele. Porém, encerraram o contrato com a Neomode e gostariam de mudar a plataforma de e-commerce. gostariam de usar como integrador o 4middleware. Validei com parceria tech, e seria possível via API (cliente ciente). São 5 lojas físicas de segmentos diferentes"* (Simples Inovação & Wake Parcerias, 2025-09-03).
+
+**Insights:**
+- **Multi-segmento físico (5 lojas)** com necessidade de manter ERP Datasystem — caso de iPaaS via 4middleware.
+- Padrão **iPaaS via API com integrador independente** quando ERP não tem conector nativo — validado por Wake Parceria Tech.
+
+---
+
+### CASE-083 — Carinion Mix
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Carinion Mix (`carinonmix.com.br`) |
+| **Setor** | multi-categoria |
+| **Status** | ❌ perdido para VNDA |
+| **Plataforma anterior** | HostGator |
+| **Visualizações** | 1.2K/mês |
+| **Parceiros envolvidos** | E-Plus, Eficaz, Dotkom (carrossel) |
+| **Data da última menção** | 2025-09-19 |
+
+**Situação:** Lead SDR distribuído em 2025-09-15: *"1.2K de visitas por mês no site. O cliente possui uma loja virtual, mas a plataforma atual apresenta limitações significativas (Loja HostGator)"* (Eficaz <> WAKE, 2025-09-15). Em 2025-09-19, Eficaz reporta perda: *"Carinion mix, avisa a Eficaz que fechou com VNDA devido eles terem diversas precificações acessíveis, sendo a maior R$600,00 mensais. Achou nossa plataforma com investimento alto, ou seja, sem perfil"* (Eficaz <> WAKE, 2025-09-19).
+
+**Insights:**
+- **Perdido para VNDA por preço** (R$ 600/mês teto cliente vs proposta Wake) — SMB low-end sem perfil Wake.
+- VNDA aparece como **competidor recorrente em SMB low-end** (também citado em CASE-085 Zinnia como churn-source).
+
+---
+
+### CASE-084 — Believe Professional + Tazin Cosméticos (lote beleza SMB)
+
+| Campo | Valor |
+|---|---|
+| **Cliente A** | Believe Professional (`believepro.com.br`) — beleza profissional |
+| **Cliente B** | Tazin Cosméticos (`tazincosmeticos.com.br`) — cosméticos |
+| **Status** | ⚠ ambos em negociação (rotação carteira 2026-01) |
+| **Plataforma anterior** | Believe: Loja Integrada; Tazin: Nuvem Shop |
+| **ERP / custo atual** | Believe: ERP Bling; Tazin: paga R$ 7.500/mês para agência |
+| **Parceiros envolvidos** | Simples Inovação, FZ Commerce, Lemoon, Proex (carrossel) |
+| **Data última menção** | 2026-01-22 |
+
+**Believe Professional** (lead SDR 2025-09-22): *"Plataforma atual: Loja Integrada. Estão em busca de uma nova solução, pois a LI esta deixando a desejar. Vendem somente na loja física + e-commerce. ERP: Bling"* (Simples Inovação & Wake Parcerias, 2025-09-22).
+
+**Tazin Cosméticos** (lead SDR 2025-09-24): *"Plataforma atual: Nuvem Shop. Reclamou bastante dizendo que o e-commerce não está vendendo, sendo que os gastos atuais estão altos. Comentou que hoje paga R$ 7.500 p/ uma agência"* (Wake <> Lemoon, 2025-09-24).
+
+**Insights:**
+- Padrão **Loja Integrada / Nuvem Shop → Wake** repetido em vários leads — pitch SMB beleza tem caminho conhecido.
+- Custo R$ 7.500/mês com agência (Tazin) é **benchmark de SMB-mid** para proposta.
+
+---
+
+### CASE-085 — Regina Salomão
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Regina Salomão (`reginasalomao.com.br`) |
+| **Setor** | moda feminina |
+| **Status** | ⚠ projeto adiado para 2026 (proposta com desconto vencida em 10/2025) |
+| **Plataforma anterior** | Tray ✓ verificado |
+| **ERP** | MV Tecnologia |
+| **Faturamento online** | R$ 150k–200k/mês |
+| **Parceiros envolvidos** | Avocado Tech, Simples Inovação, FZ Commerce (carrossel) |
+| **Data da última menção** | 2026-01-06 |
+
+**Situação:** Lead SDR distribuído em 2025-10-02. Em 2025-11-27, Simples Inovação reporta: *"Regina Salomão, a proposta deles com desconto e etc, venceu no mês 10... além disso, nossa precificação de 2026 pode sofrer reajuste"* — projeto passou para 2026. Em 2026-01-06, follow-up sem resposta.
+
+**Insights:**
+- **Projeto adiado com proposta desconto vencida** — risco de perda por reajuste 2026.
+- **ERP MV Tecnologia**: não-nativo, validar integrador.
+
+---
+
+### CASE-086 — Grupo Loja do Detalhamento (Loja do Detalhamento + SGCB Brasil + IGL Coatings)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Grupo de 3 marcas detailing: `lojadodetalhamento.com.br`, `sgcbbrasil.com.br`, `loja.iglcoatings.com.br` |
+| **Setor** | automotivo / detailing (estética automotiva) |
+| **Status** | ⚠ em negociação multi-loja |
+| **Plataforma anterior** | Tray ✓ verificado |
+| **ERP** | Arth Magnus (precisa integrador) |
+| **Parceiros envolvidos** | Simples Inovação, Proex, FZ Commerce (carrossel) |
+| **Data da última menção** | 2025-11-11 |
+
+**Situação:** Lead SDR distribuído em 2025-10-29 como **grupo de 3 lojas**: *"Loja do Detalhamento - Commerce - Canais. Plataforma atual: Tray. Necessidade: A idéia é migrar as 3 lojas e manter o mesmo estoque p/ todas"* (Simples Inovação & Wake Parcerias, 2025-10-29). Em 2025-10-31, discovery: *"hoje mais cedo conversei com o natã que é o mkt da Loja do Detalhamento, SGCB e IGL Coatings... eles usam o ERP Arth Magnus (nesse caso iremos precisar de um integrador) e têm um ponto importante: as três lojas vendem separadas, mas tudo sai do mesmo CD. Ele quer controlar estoque e pedidos num sistema único"* (Simples Inovação & Wake Parcerias, 2025-10-31).
+
+**Insights:**
+- Caso **multi-loja com estoque unificado** — pitch deve mostrar Wake OMS como diferencial.
+- **ERP Arth Magnus**: não-nativo, integrador-ERP obrigatório.
+- **Vertical detailing automotivo** é nicho relevante e recorrente.
+
+---
+
+### CASE-087 — Alfredo Meyer
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Alfredo Meyer (`alfredomeyer.com.br`) |
+| **Setor** | moda |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | WordPress ✓ verificado |
+| **Visualizações** | 6.1K/mês |
+| **Parceiros envolvidos** | Cava Digital, Proex, FZ Commerce (carrossel) |
+| **Data da última menção** | 2025-12-05 |
+
+**Situação:** Lead SDR distribuído em 2025-11-25: *"Plataforma atual: Wordpress. operação tem um volume relevante de pedidos e ticket médio alto, e estão estruturando o plano de crescimento p/ 2026. Lista de prioridades: Migração segura... Loja responsiva... Integrações com marketplaces, ERP, WhatsApp e RD Station..."* (Cava Digital & Wake Parcerias, 2025-11-25).
+
+**Insights:**
+- **Migração WordPress → Wake** com requisitos detalhados (RD Station, WhatsApp, ERP) — perfil de cliente mais maduro.
+- **Plano 2026 ativo** — boa oportunidade de fechar com tabela 2026.
+
+---
+
+### CASE-088 — Festa Color
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Festa Color (`festacolor.com.br`) |
+| **Setor** | festas e decoração / confeitaria |
+| **Status** | ❌ desqualificado |
+| **Plataforma anterior** | nenhuma (primeira experiência online) |
+| **ERP** | Sankhya (não vai vincular ao e-commerce) |
+| **Faturamento loja física** | R$ 1,5M/mês |
+| **Parceiros envolvidos** | Omni360, Affys, 3W, Eficaz (carrossel) |
+| **Data da última menção** | 2025-12-05 |
+
+**Situação:** Lead SDR distribuído em 2025-12-01. Cliente citou **Shop2gether e Puravida como referência**. Em 2025-12-05, desqualificado: *"Festa Color - Desqualificado (Cliente informou que entra em contato quando precisar)"* (WAKE | Time Agência, 2025-12-05).
+
+**Insights:**
+- **R$ 1,5M loja física** é bom perfil mas **maturidade digital zero** + sem intenção imediata = lead frio.
+- Cliente citou **Shop2gether e Puravida como referência** — sinaliza pull-marketing dos cases públicos Wake.
+
+---
+
+### CASE-089 — Ivan Joias
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Ivan Joias (`ivanjoias.com.br`) |
+| **Setor** | joalheria (Salvador/BA) |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | Tray ✓ verificado |
+| **ERP** | 4Control |
+| **GMV** | R$ 150k/mês |
+| **Lojas físicas** | 6 (shoppings em Salvador) |
+| **Parceiros envolvidos** | FZ Commerce, Proex, Cava Digital (carrossel) |
+| **Data da última menção** | 2026-01-22 |
+
+**Situação:** Lead SDR distribuído em 2025-12-01: *"Atualmente cliente Tray. Eles se interessaram pela Wake, além de fazer parte do mesmo grupo que a Tray, eles analisaram o site da Sholuder antes de entrar em contato conosco, informando que o dono da empresa gostou da ideia de cashback e agenda vendedor. ERP: 4Control. GMV médio mensal: R$ 150 mil. Possuem 6 lojas físicas em shopping em Salvador (Bahia)"* (FZ Commerce, 2025-12-01).
+
+**Insights:**
+- **Prospect por benchmark Shoulder** — features-gatilho: cashback + agenda vendedor — confirma valor das referências públicas Wake.
+- **Migração Tray → Wake dentro da mesma LWSA** — cliente procurando upgrade dentro da casa.
+
+---
+
+### CASE-090 — Sustent
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Sustent Intermediação de Negócios (`sustent.com.br`) |
+| **Setor** | beleza / marketplace B2B2C |
+| **Status** | ⚠ em qualificação (marketplace próprio) |
+| **ERP** | Omie + Bling |
+| **Parceiros envolvidos** | Omni360, Affys, Cava Digital, FZ Commerce (carrossel) |
+| **Data da última menção** | 2025-12-16 |
+
+**Situação:** Lead SDR distribuído em 2025-12-16: *"O lead está procurando uma solução SaaS para criar um marketplace B2B2C, voltado para o segmento de beleza e cuidados pessoais. Ele quer ser um marketplace próprio, 100% online, sem loja física... Sobre custos, ele entendeu que o valor apresentado é para criação de e-commerce, mas para operar como marketplace será necessário incluir os valores de um parceiro da Wake"* (Wake+Omni360+Affys, 2025-12-16).
+
+**Insights:**
+- **Cliente quer ser marketplace próprio** (B2B2C) — Wake não tem produto marketplace próprio; depende de parceiro custom. Validar escopo com Solutions antes de prometer.
+- Sinaliza necessidade de **playbook de marketplace próprio** distinto de vendas em marketplaces (Anymarket).
+
+---
+
+### CASE-091 — Shop2gether (Grupo Icomm)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Shop2gether (`shop2gether.com.br`) — Grupo Icomm |
+| **Setor** | moda / varejo feminino multi-marca |
+| **Status** | ✓ ativo (case público publicado) |
+| **Plataforma anterior** | VTEX ✓ verificado |
+| **Parceiros envolvidos** | Oásis (agência), DRIVEN (tentativa inicial, transferida a Oásis), Leanwork (app) |
+| **Data da última menção** | 2026-05-28 |
+
+**Situação:** **Fechamento em 2025-07-30**: *"Fecharam shop2gether"* (Mavericks, 2025-07-30); *"acabaram de fechar shop2gether"* (WAKE | Time Parcerias, 2025-07-30). Case oficial Wake publicado em 2025-08-18: `wake.tech/cases/como-a-wake-ajudou-o-grupo-icomm-shop2gether-e-oqvestir-com-sites-de-alta-performance/` (FZ Commerce, 2025-08-18). Em 2025-08-14: *"a DRIVEN começou fazer shop2gether, não conseguiu fazer, deu problema no projeto e foi ai que passou pra Oásis"* — transferência de agência. Em 2026-05-14, ticket de suporte sobre clonagem de cartão. Em 2026-05-28: *"Shop2gether tava normal ontem, mas vamos avisar o time"*.
+
+**Solução:** Wake Commerce com checkout próprio operado pela Oásis. Cliente do **Grupo Icomm** (junto com OqVestir).
+
+**Insights:**
+- **Migração VTEX → Wake enterprise** com case público.
+- **Transferência de agência durante implementação** (DRIVEN → Oásis): exemplo prático de quando trocar agência.
+- **Citado como referência** em CASE-021 ACC Modas, CASE-088 Festa Color — funciona como pull-marketing.
+- Combinar com **OqVestir** (mesmo grupo) — case multi-marca enterprise.
+
+---
+
+### CASE-092 — Zinnia Leather
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Zinnia Leather (`zinnialeather.com.br`) |
+| **Setor** | moda / acessórios de couro alto ticket |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | VNDA ✓ verificado |
+| **Visualizações** | 1.4K/mês |
+| **Parceiros envolvidos** | Engajar, A&EIGHT (B8One), Cava Digital (carrossel) |
+| **Data da última menção** | 2026-02-02 |
+
+**Situação:** Lead SDR distribuído em 2026-02-02: *"Zinnia- Canais. São clientes da VNDA, vendem peças de alto ticket. Temos necessidade de otimizar a reco[mendação]..."* (Wake <> Engajar, 2026-02-02). Lead em tabela 2026.
+
+**Insights:**
+- **Migração VNDA → Wake** com necessidade de melhorar recomendação — pitch de feature mix & match / Biso.
+- Alto ticket + baixo tráfego = perfil **premium boutique**.
+
+---
+
+### CASE-093 — Cittius
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Cittius (`cittius.com.br`) |
+| **Setor** | brinquedos colecionáveis / blocos de montar licenciados |
+| **Status** | ⚠ em negociação ativa (Wake UP B2B — R$ 4.900 MRR proposto, _quente_) |
+| **Plataforma anterior** | nenhuma (lançamento em 03/2026 na ABRIN) |
+| **Parceiros envolvidos** | 3W, Omni360, Affys, FZ Commerce (carrossel) |
+| **Data da última menção** | 2026-06-02 |
+
+**Situação:** Lead SDR distribuído em 2026-02-09: *"Eles estão estruturando uma operação de venda de produtos licenciados de blocos de montar colecionáveis... lançar no início de março, na ABRIN... Chegou até nós através de indicação de uma pessoa que trabalha na Olist"* (Wake <> 3W, 2026-02-09). Em 2026-05-25/26, negociação ativa com desconto: *"Cittius, pediram para tentarmos algum desconto na mensalidade B2B de 4900,00. É possível?"* (WAKE | Time Agência, 2026-05-26). Em 2026-06-02, listado como _quente_: *"Cittius - B2B - R$4.900,00 MRR (pode reduzir um pouco esse MRR, em negociação...) _quente_"*.
+
+**Insights:**
+- **Cliente novo B2B (Wake UP) com ticket R$ 4.900 MRR** — referência de precificação Wake UP B2B 2026 (junto com CASE-094 HVSUL).
+- **Lead via Olist** (indicação de pessoa do competidor) — canal interessante.
+
+---
+
+### CASE-094 — HV Sul (HVSUL — Grupo Anhanguera)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | HV Sul (`hvsul.com.br`) — citado junto com Grupo Anhanguera |
+| **Setor** | ⚠ status desconhecido (vínculo Anhanguera mencionado) |
+| **Status** | ⚠ em negociação ativa _quente_ (B2B R$ 4.900 MRR, competindo com VTEX que ofertou 6 meses) |
+| **Parceiros envolvidos** | Catus, Avocado Tech, Duo (carrossel) |
+| **Data da última menção** | 2026-06-02 |
+
+**Situação:** Lead apareceu em 2026-04-14. Em 2026-05-28, negociação acirrada: *"Estou tentando negociar valores na HVSUL, eles receberam ontem uma proposta da VTEX bem agressiva e estou alinhando com o Gabriel de como agregar valor para o Diogo, comparado com Wake"* (Wake <> Avocado Tech, 2026-05-28). Em 2026-06-02, em lista de quentes: *"HVSUL - B2B - R$4.9000 MRR (pode reduzir, em negociação, VTEX deu 6 meses) _quente_"* (WAKE | Time Agência, 2026-06-02). **Conexão com Anhanguera**: *"coloco o head de e-com da anhanguera para elogiar vcs"* (Wake <> Catus, 2026-05-28).
+
+**Insights:**
+- **Caso competitivo Wake vs VTEX** ativo (2026-06) — VTEX ofertou **6 meses grátis** como blocker. Battlecard Wake vs VTEX deve referenciar este caso.
+- **Wake UP B2B R$ 4.900 MRR** confirmado como tabela 2026 — junto com Cittius.
+
+---
+
+### CASE-095 — Inigual Decor
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Inigual Decor (`inigual.com.br`) — contato Rodrigo |
+| **Setor** | casa e decoração |
+| **Status** | ❌ sem perfil de migração (2026-05) |
+| **Plataforma anterior** | Nuvem Shop ✓ verificado |
+| **ERP** | Bling |
+| **Faturamento online** | R$ 20k site + 90% em marketplaces |
+| **Parceiros envolvidos** | Dotkom, FZ Commerce, Eficaz (carrossel) |
+| **Data da última menção** | 2026-05-08 |
+
+**Situação:** Lead SDR distribuído em 2026-04-22. Em 2026-05-08, Eficaz conclui: *"Rodrigo Inigual: trocou recentemente de tema na Nuvem e vende R$20k no ecommerce. Sem perfil de migrar para Wake hoje"* (Eficaz <> WAKE, 2026-05-08).
+
+**Insights:**
+- **Cliente sem perfil Wake** (R$ 20k/mês site + investimento recente em tema Nuvem) — exemplo de qualificação que filtra bem.
+- 90% GMV em marketplaces = pitch alternativo seria Anymarket, não Commerce.
+
+---
+
+### CASE-096 — Fuel (UseFuel)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Fuel (`usefuel.com.br`) |
+| **Setor** | óculos de sol / eyewear |
+| **Status** | ✓ ativo (Metakosmos 3D em produção; sem Go-Live confirmado em 2025-08) |
+| **Parceiros envolvidos** | Metakosmos (visualizador 3D), Serasa, Duo |
+| **Data da última menção** | 2026-06-02 |
+
+**Situação:** Em 2025-08-22, CRMBonus lista Fuel como cliente sem Go-Live: *"Fuel - Ainda sem go live"* (Wake + CRMBonus | Parcerias, 2025-08-22). Em 2026-04-27: *"a Rafa, de vendas, vai te procurar para falar sobre https://www.usefuel.com.br/"* (Serasa & Wake, 2026-04-27). Em 2026-05-14, **Metakosmos 3D em produção**: *"Fuel (Visualizador 3D). https://www.usefuel.com.br/produto/oculos-de-sol-storia-152540"* (Wake & Metakosmos, 2026-05-14).
+
+**Solução:** Wake Commerce + **Metakosmos visualizador 3D** ativo em PDP (URL específica de óculos verificada).
+
+**Insights:**
+- Case **Metakosmos em produção** (junto com Gregory — CASE-060 do batch paralelo).
+- Vertical **óculos/eyewear** é greenfield no catálogo.
+
+---
+
+### CASE-097 — HDM Beauty (`eclerbeauty.com.br`)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | HDM Beauty (`eclerbeauty.com.br` é o site da marca luxo do grupo) |
+| **Setor** | beleza / cosméticos (B2C + B2B luxo) |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | Shopify ✓ verificado (origem Tray → Shopify → migrar para Wake) |
+| **Pagamento atual** | Mercado Pago (Shopify) — com bloqueio recorrente |
+| **Parceiros envolvidos** | SAVVI, DRIVEN, O2 Consultoria (carrossel) |
+| **Data da última menção** | 2026-04-29 |
+
+**Situação:** Lead SDR distribuído em 2026-04-29: *"HDM BEAUTY - CANAIS... conheceu através do Gemini, recomendaram a Wake. Contou que estava relatando pro Gemini os problemas na Shopify, e ele recomendou a ADOBE Commerce e Wake Commerce... iniciaram na Tray... migrar para a Shopify... número de acessos é maior, mas conversão menor. Gostava da Vindi... Shopify usa Mercado Pago e tem bloqueado pagamento de clientes, aciona fraude mesmo sendo cliente real. Tem duas frentes de negócio, uma que trabalha com várias marcas e outra que é mais luxo. A loja luxo já estava na Shopify. Essa segunda marca vai ser somente B2B... (https://eclerbeauty.com.br/) > estão negociando com fabricas para passar a vender para revendedores"* (SAVVI & Wake, 2026-04-29).
+
+**Insights:**
+- **Cliente chegou via Gemini IA** — primeira evidência no corpus de lead atribuído a recomendação de assistente IA (Gemini citou Wake junto com Adobe Commerce). Sinal de presença Wake em LLMs.
+- **Migração Tray → Shopify → Wake** — segunda migração em 2 anos. Dor: conversão baixa pós-Shopify + bloqueio Mercado Pago.
+- **Duas frentes**: B2C multi-marca + B2B luxo (eclerbeauty) — pitch Wake B2B + B2C numa mesma instância.
+
+---
+
+### CASE-098 — Pisom & Co (Pisomeco)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Pisom & Co (`pisomeco.com.br`) |
+| **Setor** | construção / pisos |
+| **Status** | ⚠ em negociação (sem retorno em 2026-05) |
+| **ERP** | recém-migrado a ERP novo na loja física |
+| **Parceiros envolvidos** | SAVVI, DRIVEN, Quick Digital (carrossel) |
+| **Data da última menção** | 2026-05-14 |
+
+**Situação:** Lead SDR distribuído em 2026-04-29: *"Está em uma pesquisa de unificação de estoque da loja física com o e-commerce. Estoques todos separados, até em lojas separadas e está inviável manter dois estoques. Tem visto cada vez o OMS e a unificação. Acabaram de migrar para um ERP na loja f[ísica]"* (SAVVI & Wake, 2026-04-29). Em 2026-05-12/14: *"Tentei contato com a Pisom algumas vezes mas continuo sem retorno"*.
+
+**Insights:**
+- Caso clássico de **unificação OMS multi-loja física** — pitch Wake OMS.
+- Recém-migrou ERP físico = timing ruim para nova migração ⚠.
+
+---
+
+### CASE-099 — Nano4you Brasil
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Nano4you Brasil (`nano4you.com.br`) |
+| **Setor** | ? (Curitiba — chegou após evento Wake 2026-05-21) |
+| **Status** | ⚠ em negociação (decisão depende de diretoria) |
+| **Plataforma anterior** | Tray (desde março/2025) |
+| **Parceiros envolvidos** | Nairuz, N1, Dotkom (carrossel) |
+| **Data da última menção** | 2026-05-28 |
+
+**Situação:** Lead SDR distribuído em 2026-05-28: *"Empresa: Nano4you Brasil. Plataforma Atual: Tray (desde março/2025). Origem: Contato iniciado após o evento do dia 21 em Curitiba. Temperatura do Cliente: Morna para Quente. Inicialmente, o time demonstrou uma postura cautelosa, mencionando que a migração não era '100% prioridade'. No entanto, conforme a tecnologia da Wake foi apresentada — principalmente as soluções de múltiplos CDs e regionalização —, o interesse aumentou drasticamente"* (Wake + N1, 2026-05-28). **Decisão depende de diretoria**.
+
+**Insights:**
+- **Lead vindo de evento Wake (Curitiba 2026-05-21)** — ROI de eventos comprovado.
+- Features-gatilho: **múltiplos CDs + regionalização** — diferencial competitivo Wake confirmado em discoveries.
+- Time interno técnico empolgado mas **decisor é diretoria** — agência precisa preparar pitch custo×valor robusto.
+
+---
+
+### CASE-100 — Unipeças MA
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Unipeças (`unipecasma.com.br`) — Imperatriz/MA |
+| **Setor** | autopeças agrícolas (peças e implementos para tratores) |
+| **Status** | ⚠ em negociação |
+| **Plataforma anterior** | nenhuma (>30 anos só físico + televendas) |
+| **Faturamento** | R$ 10M–30M anuais (Neoway) |
+| **Marcas distribuídas** | New Holland, Bosch, Tramontina |
+| **Parceiros envolvidos** | Visie, SAVVI, DRIVEN (carrossel) |
+| **Data da última menção** | 2026-06-03 |
+
+**Situação:** Lead SDR distribuído em 2026-05-29: *"Empresa: Unipeças. Localização: Imperatriz - Maranhão. Tempo de Mercado: Mais de 30 anos de atuação exclusiva no varejo físico e televendas. Segmento: Venda de peças e implementos agrícolas, com foco em tratores. Marcas Distribuídas/Revendidas: New Holland, Bosch, Tramontina. Faturamento Estimado (Neoway): De R$ 10.000.000,01 a R$ 30.000.000,00 anuais. A Unipeças está iniciando sua jornada digital. O principal gatilho para o projeto é a mudança no comportamento do mercado: os fornecedores e fábricas começaram a vender diretamente ao consumidor final. Objetivo: Criação de um e-commerce focado inicialmente em B2C... mas com capacidade para também atender ao público B2B"* (Visie & Wake, 2026-05-29). Em 2026-06-03, sem retorno: *"Chamei a Aline da Unipeças para uma reunião para apresentarmos a Visie, mas não tive retorno"*.
+
+**Insights:**
+- Cenário **fabricante D2C disruption → revendedor precisa entrar no digital** — argumento recorrente para B2B autopeças.
+- **Greenfield digital (sem plataforma anterior)** + perfil B2C transicional para B2B = combo Wake Commerce + Wake B2B futuro.
+
+---
+
+### CASE-101 — Gold Prime Joalheria
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Gold Prime Joalheria (`goldprimejoias.com.br`) |
+| **Setor** | joalheria (Itaim Bibi/SP) |
+| **Status** | ❌ perdido por falta de retorno |
+| **Plataforma anterior** | Tray ✓ verificado |
+| **Parceiros envolvidos** | Ge Commerce, SAVVI, DRIVEN (carrossel) |
+| **Data da última menção** | 2026-03-30 |
+
+**Situação:** Lead SDR distribuído em 2026-02-13: *"Plataforma atual: Tray. Estão em busca de um e-commerce estilo Orit (https://www.orit.com.br/quero-comprar). Hoje trabalham com compra e venda de joias e estão no Itaim Bibi. A loja online hoje não vende, e os clientes chegam até eles por indicação"* (DRIVEN & Wake, 2026-02-13). Em 2026-03-30: *"Gold Prime Joalheria - perdido por falta de retorno"* (SAVVI & Wake, 2026-03-30).
+
+**Insights:**
+- Lead com **Orit como referência de site** — Orit é case ativo Wake usado como benchmark visual em joias (apesar de não ter case dedicado no catálogo, é citado como referência viva).
+- Padrão de **perda por falta de retorno em 6 semanas** — risco SMB típico.
+
+---
+
+### CASE-102 — Tag de leads consolidados FZ Commerce (rotação carteira 2026-01)
+
+| Campo | Valor |
+|---|---|
+| **Origem** | Mensagem consolidada em FZ COMMERCE & Wake, 2026-01-22 |
+| **Status** | ⚠ multi-prospect — todos em rotação |
+| **Data** | 2026-01-22 |
+
+**Situação:** Em 2026-01-22, FZ Commerce compartilhou lista consolidada de oportunidades em rotação na carteira: *"Uniland - Commerce - Canais / 7 Oliveiras - Commerce - Canais / Surfs UP Club - Commerce - Canais / Ekilibre Amazônia - Commerce - Canais / ABRAFER - Commerce - Canais / Conceito Rouparia - Commerce - Canais / Believe Professional - Commerce - Canais / Tazin Cosméticos - Commerce - Canais / GoPure - Commerce - Canais / Koube - Commerce - Canais / Vitalbio - Commerce - Canais / Regina Salomão - Commerce - Canais / Loja do Detalhamento - Commerce - Canais / Alfredo Meyer - Commerce - Canais / Ivan Joias- Canais / Sustent Intermediação de Negócios- Canais"* (FZ COMMERCE & Wake, 2026-01-22).
+
+**Casos detalhados neste catálogo:**
+- 7 Oliveiras → CASE-081
+- Conceito Rouparia → CASE-082
+- Believe Professional + Tazin → CASE-084
+- Regina Salomão → CASE-085
+- Loja do Detalhamento + SGCB + IGL → CASE-086
+- Alfredo Meyer → CASE-087
+- Ivan Joias → CASE-089
+- Sustent → CASE-090
+
+**Casos médio-confiança (não escritos):**
+- Uniland, Ekilibre Amazônia, ABRAFER, GoPure, Koube, Vitalbio, Surfs UP Club — tracked como watchlist.
+
+**Insights:**
+- Lista FZ Commerce 2026-01-22 é a **fotografia mais consolidada** do pipeline canais SMB no início de 2026.
+- Muitos leads compartilhados em **4+ agências em paralelo** — sinal de saturação do modelo carrossel.
+
+---
+
+### Verificação — Segunda leva CASE-073 a CASE-102
+
+| Claim | Status | Query (LIKE) | Evidence |
+|---|---|---|---|
+| Cerealista Express é cliente Magento querendo migrar; rotação em 3 agências | ✓ verificado | `%CEREALISTA EXPRESS%`; `%cerealistaexpress%` | Wake <> Avocado Tech 2025-11-27, 2025-12-04; O2 Consultoria & Wake 2026-01-26 |
+| Eletrônica Santana é cliente Wake confirmado (Grupo com ES TECH + Dealer Shop B2B) via Ecommerce House + Biso | ✓ verificado | `%Eletrônica Santana%nosso cliente%`; `%Grupo Eletrônica Santana%` | Wake & Biso 2025-09-16; Ecommerce House 2026-02-03 e 2026-04-08 |
+| Inoxlon: Climba → Wake, ERP Bling, GMV R$ 200k, lead esfriou por contato inexistente | ✓ verificado | `%INOXLON%Canais%`; `%Inoxlon%inoxlon@inoxlon%` | Wake & A&EIGHT 2026-02-12; Wake <> Engajar 2026-02-19 |
+| AZ Acessórios entrou no ar em 2025-06-23 pela Eficaz; case do Grupo Cambuci | ✓ verificado | `%azacessorios%Cambuci%`; `%AZ acessórios%AR%` | Eficaz <> WAKE 2025-06-23; 2026-03-04 (novo storefront); 2026-03-16 (referência em discovery) |
+| Dallanese Parafusos é lead frio (ERP Sankhya, GMV R$ 50k) sem retorno após 4 semanas | ✓ verificado | `%Dallanese%Sankhya%`; `%Dallanese%retorno%` | Duo e Wake Parcerias 2025-06-25; A&EIGHT 2025-07-15; Duo 2025-07-21 |
+| Balletto é migração VTEX (ERP Sisplan) em proposta 07/2025 via O2 | ✓ verificado | `%Balletto%VTEX%`; `%Balletto%Sisplan%` | Wake <> 3W 2025-07-11; O2 Consultoria & Wake 2025-07-22 |
+| AR15 Sport é migração Tray (airsoft) com tomador difícil de engajar | ✓ verificado | `%AR15 Sport%Tray%`; `%AR15%airsoft%` | Wake <> E-Plus 2025-07-22; WAKE \| Time Agência 2025-09-19 a 2025-09-29 |
+| Campinas Diesel é lead SDR via Msam distribuído a Catus + Eficaz + Proex em 2025-08-12 | ✓ verificado | `%Campinas Diesel%Msam%`; `%Campinas Diesel%mercado livre%` | Eficaz <> WAKE 2025-08-12; Wake <> Catus 2025-08-15 |
+| 7 Oliveiras: Visual e-commerce → Wake, ERP ZADA, 80% GMV em marketplaces | ✓ verificado | `%7oliveiras%ZADA%`; `%7 Oliveiras%marketplaces%` | Simples Inovação & Wake Parcerias 2025-08-18 |
+| Conceito Rouparia: Loja Integrada → Wake, manter ERP Datasystem via 4middleware (API validado por Wake Parceria Tech) | ✓ verificado | `%conceitorouparia%Datasystem%`; `%4middleware%API%` | Simples Inovação & Wake Parcerias 2025-09-03 |
+| Carinion Mix perdido para VNDA por preço (R$ 600/mês teto cliente) | ✓ verificado | `%Carinion%VNDA%`; `%carinonmix%HostGator%` | Eficaz <> WAKE 2025-09-15 e 2025-09-19 |
+| Believe Professional: Loja Integrada → Wake, ERP Bling | ✓ verificado | `%believepro%Loja Integrada%` | Simples Inovação & Wake Parcerias 2025-09-22 |
+| Tazin Cosméticos: Nuvem Shop → Wake, paga R$ 7.500/mês para agência atual | ✓ verificado | `%tazincosmeticos%Nuvem Shop%`; `%Tazin%7.500%` | Wake <> Lemoon 2025-09-24 |
+| Regina Salomão: Tray → Wake, ERP MV Tecnologia, GMV R$ 150-200k, projeto adiado para 2026 | ✓ verificado | `%Regina Salomão%Tray%`; `%Regina Salomão%mês 10%` | Wake <> Avocado Tech 2025-10-02; Simples Inovação & Wake Parcerias 2025-11-27 |
+| Loja do Detalhamento + SGCB + IGL Coatings: grupo de 3 lojas detailing automotivo, Tray → Wake com OMS unificado, ERP Arth Magnus precisa integrador | ✓ verificado | `%Loja do Detalhamento%`; `%SGCB%IGL%`; `%Arth Magnus%` | Simples Inovação & Wake Parcerias 2025-10-29 e 2025-10-31 |
+| Alfredo Meyer: WordPress → Wake, requer RD Station + WhatsApp + ERP + marketplaces | ✓ verificado | `%alfredomeyer%Wordpress%`; `%Alfredo Meyer%RD Station%` | Cava Digital & Wake Parcerias 2025-11-25; FZ Commerce 2025-12-05 |
+| Festa Color foi desqualificado em 2025-12-05; citou Shop2gether + Puravida como referência | ✓ verificado | `%Festa Color%Desqualificado%`; `%Festa Color%shop2gether%` | WAKE \| Time Agência 2025-12-05; Eficaz <> WAKE 2025-12-01 |
+| Ivan Joias: Tray (mesma LWSA) → Wake, ERP 4Control, GMV R$ 150k, 6 lojas Salvador, decisão por benchmark Shoulder (cashback + agenda vendedor) | ✓ verificado | `%Ivan Joias%4Control%`; `%Ivan Joias%Sholuder%` | FZ Commerce 2025-12-01; Cava Digital 2026-01-19 |
+| Sustent quer ser marketplace B2B2C próprio em beleza (ERP Omie+Bling, equipe interna iPaaS) | ✓ verificado | `%sustent.com.br%marketplace%`; `%Sustent%B2B2C%` | Wake+Omni360+Affys 2025-12-16 |
+| Shop2gether (Grupo Icomm) fechou em 2025-07-30, caso público publicado em 2025-08-18, migração DRIVEN→Oásis | ✓ verificado | `%shop2gether%fech%`; `%icomm-shop2gether%cases%` | Mavericks 2025-07-30; FZ Commerce 2025-08-18; WAKE \| Time Agência 2025-08-14 |
+| Shop2gether ainda sem Go-Live em 2025-08-22 segundo CRMBonus | ✓ verificado | `%Icomm%Shop2gether%go live%` | Wake + CRMBonus \| Parcerias 2025-08-22 |
+| Zinnia Leather: VNDA → Wake, acessórios couro alto ticket, 1.4K visualizações/mês | ✓ verificado | `%Zinnia%VNDA%`; `%zinnialeather%` | Wake <> Engajar 2026-02-02; Wake & A&EIGHT 2026-02-02 |
+| Cittius é prospect novo B2B (Wake UP) por R$ 4.900 MRR em negociação ativa, lead via Olist | ✓ verificado | `%Cittius%B2B%4.900%`; `%Cittius%Olist%` | Wake <> 3W 2026-02-09; WAKE \| Time Agência 2026-05-26 e 2026-06-02 |
+| HVSUL é prospect B2B R$ 4.900 MRR _quente_ competindo com VTEX (que ofertou 6 meses); conexão Grupo Anhanguera | ✓ verificado | `%HVSUL%VTEX%`; `%HVSUL%4.9%`; `%anhanguera%head%e-com%` | WAKE \| Time Agência 2026-06-02; Wake <> Catus 2026-05-28 e 2026-06-02 |
+| Inigual Decor (Nuvem Shop, R$ 20k/mês, 90% em mkp) desqualificado em 2026-05-08 | ✓ verificado | `%Rodrigo Inigual%`; `%inigual.com.br%` | FZ Commerce 2026-04-22; Eficaz <> WAKE 2026-05-08 |
+| Fuel (UseFuel) tem Metakosmos visualizador 3D em produção em PDP (URL específica verificada) | ✓ verificado | `%usefuel%Metakosmos%`; `%Fuel%Visualizador 3D%` | Wake & Metakosmos 2026-05-14; Wake + CRMBonus 2025-08-22 |
+| HDM Beauty (eclerbeauty.com.br): chegou via Gemini IA, Tray → Shopify → Wake, B2C multi-marca + B2B luxo | ✓ verificado | `%HDM BEAUTY%Gemini%`; `%eclerbeauty%B2B%` | SAVVI & Wake 2026-04-29; DRIVEN & Wake 2026-04-29 |
+| Pisom & Co (pisomeco.com.br) é lead OMS multi-loja física construção/pisos sem retorno | ✓ verificado | `%Pisom%OMS%`; `%pisomeco%` | SAVVI & Wake 2026-04-29; Quick Digital 2026-05-12; SAVVI 2026-05-14 |
+| Nano4you Brasil é Tray → Wake, vindo de evento Wake Curitiba 2026-05-21, gatilhos múltiplos CDs + regionalização, decisor é diretoria | ✓ verificado | `%Nano4you%Curitiba%`; `%Nano4you%múltiplos CDs%` | Wake + N1 / Wake <> Nairuz / Parcerias Dotkom 2026-05-28 |
+| Unipeças MA é autopeças agrícolas em Imperatriz/MA, greenfield digital, faturamento R$ 10-30M anuais (Neoway) | ✓ verificado | `%Unipeças%Imperatriz%`; `%unipecasma%New Holland%` | Visie & Wake 2026-05-29 e 2026-06-03 |
+| Gold Prime Joalheria (Itaim Bibi, Tray → Wake): perdido por falta de retorno em 2026-03-30; usou Orit como benchmark | ✓ verificado | `%Gold Prime%perdido%`; `%Gold Prime%Orit%` | DRIVEN & Wake 2026-02-13; SAVVI & Wake 2026-03-30 |
+| Lista consolidada FZ Commerce 2026-01-22 lista 16 oportunidades em rotação carteira | ✓ verificado | `%Uniland%7 Oliveiras%Sustent%` | FZ COMMERCE & Wake 2026-01-22 19:23 |
+| Skip: Orit é referência visual de joias citada como benchmark, **não cliente Wake direta com evidência suficiente** | ❌ sem fonte direta | `%orit.com.br%` (4 hits, todas como referência em descrição de outros leads) | Comercial Cross WAKE 2025-09-17; DRIVEN/Ge Commerce/SAVVI 2026-02-13 |
+| Skip: SoulPink é projeto interno/founder (grupo "SoulPink - DONOS"), **não cliente Wake** | ❌ não-aplicável | `%SoulPink%`; `%eusoulpink%` | SoulPink - DONOS / SoulPink Geral 2025-05 a 2026-06 (decisão de domínio, planejamento) |
+| Conexão Grupo Cambuci ↔ outros clientes Wake (ex: Penalty/Olympikus) | ⚠ inferido | n/a — Cambuci nomeado mas vínculo não confirmado em corpus | Eficaz <> WAKE 2025-06-23 (única menção Cambuci) |
 
 ---
 
