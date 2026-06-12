@@ -3,7 +3,7 @@
 **Artefato**: catálogo de customer cases extraído do corpus WhatsApp Wake/parceiros (`store/messages.db`).
 **Data**: 2026-06
 **Fonte**: mensagens de grupo (`chat_jid LIKE '%@g.us'`, texto puro), recortes 2025-06 a 2026-06.
-**Total de casos**: 50
+**Total de casos**: 59
 
 ---
 
@@ -42,6 +42,7 @@ Casos sem evidência suficiente foram omitidos. Empresas que aparecem apenas em 
 4. **Por segmento — Autopeças, Indústria, Outros**: CASE-033 a CASE-040
 5. **Por cenário — Churn e migrações de saída**: CASE-041 a CASE-046
 6. **Por cenário — Prospects em negociação ativa (jun/2026)**: CASE-047 a CASE-050
+7. **B2B, Afiliados e Verticais Especializadas (Editoras)**: CASE-051 a CASE-059
 
 ---
 
@@ -941,7 +942,8 @@ Casos abertos em 2026-05 distribuídos entre múltiplas agências da carteira. V
 
 | Status | Quantidade | Casos |
 |---|---|---|
-| ✓ ativo (com contrato assinado e/ou Go-Live confirmado) | 22 | Aramis, Inbrands, Karcher, Shoulder, Soneda, Tommy, Corello, Cless, Adaptogen, Mamô, Letty, Lizie, Cacay, Baw, Sumirê, Wamp Biquinis, Casa Almeida, Balaroti, Hiper Equipamentos, UncleK, Yamaha, Jacto, Garage |
+| ✓ ativo (com contrato assinado e/ou Go-Live confirmado) | 30 | Aramis, Inbrands, Karcher, Shoulder, Soneda, Tommy, Corello, Cless, Adaptogen, Mamô, Letty, Lizie, Cacay, Baw, Sumirê, Wamp Biquinis, Casa Almeida, Balaroti, Hiper Equipamentos, UncleK, Yamaha, Jacto, Garage, Esplane, CVC, Yora, Destro, Gold, A Fábrica, Unitoys, Editora Fórum |
+| ⚠ B2B em onboarding (B2C ativo) | 1 | Buddemeyer |
 | ⚠ em negociação | 12 | Ello Moda, ACC Modas, Lenscope, Verdes Mares, LEDVANCE, Empório do Sertão, Off Rush, Wallford, Empório do Celular, Ybera, Palácio das Essências, Protwins |
 | ✓ migrado | 2 | Oriba (Shopify → Wake), depois churn |
 | ❌ churn | 6 | LP Beauty, Mpozenato, Ricardo Almeida, DLK Modas, Mimeria (iminente), Cadiveu (em curso) |
@@ -963,6 +965,320 @@ Casos abertos em 2026-05 distribuídos entre múltiplas agências da carteira. V
 - **Eletrônicos / Casa / Construção**: 11 casos
 - **Autopeças / Indústria**: 8 casos
 - **Outros / Status desconhecido**: 5+
+- **B2B (atacado / franquias / matriz↔revenda)**: 8 casos (Esplane, CVC, Yora, Destro, Buddemeyer B2B, Gold, A Fábrica, Unitoys) — ver §7
+- **Editoras / Publishers**: 1 caso (Editora Fórum) — ver §7
+
+---
+
+## B2B, Afiliados e Verticais Especializadas
+
+Estes casos cobrem duas jornadas adicionais e uma vertical nova que estavam ausentes do catálogo até a versão anterior:
+
+1. **B2B (atacado / matriz↔franquia / indústria↔revendedor)** — a Wake suporta a mesma loja operando em duas frentes ao mesmo tempo: URL pública B2C + área logada B2B com listas de preço, catálogo, banners e regras de pagamento próprias. A frente B2B é citada como **"estrutura bem completa"** com crédito, regionalização, mix de produto e listas de preço diferentes (CoreBiz & Wake, 2026-01-30: *"Hoje temos uma estrutura de B2B bem completa... Temos Buddemeyer e CVC como cases legais de benchmark"*). Os cases-âncora oficiais de B2B citados internamente são **CVC, GOLD, Destro e A Fábrica** (Comercial Cross WAKE, 2026-03-05: *"Quais outros cases que temos de B2B, além de: CVC, GOLD, Destro e A Fabrica?"*). A lista completa de clientes B2B Wake foi consolidada em duas mensagens — Comercial Cross WAKE 2025-12-17 e Wake <> Nairuz 2026-03-20, ambas com texto quase idêntico — e é a base deste capítulo.
+
+2. **Programas de afiliados / influencer marketing** — não é um produto Wake separado; é um padrão de uso da plataforma. A referência interna canônica está em **Comercial Cross WAKE, 2025-12-17**: *"Ybera / Shoulder para funcionários / BAW com influenciadores"*. Tecnicamente, programas de afiliados são montados via **StoreFront API** (mutations `CheckoutClone` para clonar carrinho mantendo o `partner/afiliado` + `CheckoutAddMetadata` para UTM — Uble & Wake, 2026-01-19) e via **módulo de campanha/cupom** do painel Wake (Monitfy & Wake, 2026-05-18: *"módulo de campanha/cupom integrado na plataforma... envolve variáveis para estratégia do cliente com os influ/afiliado"*). Os três clientes ativos com programa de afiliados já estão no catálogo (CASE-004 Shoulder, CASE-017 Baw, CASE-047 Ybera) — esta seção apenas adiciona referências cruzadas.
+
+3. **Editoras (publishers)** — vertical nova. Editora Fórum aparece como cliente Wake em projeto de **checkout Headless + Pagbank** (Wake <> Benova, 2025-08-26).
+
+---
+
+### CASE-051 — Esplane (B2B da Você Constrói)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Esplane |
+| **Setor** | material de construção / atacado B2B |
+| **Tipo de operação** | B2B — braço atacado da Você Constrói |
+| **Status** | ✓ ativo (citado em listas de cases B2B Wake) |
+| **URL** | `esplane.com.br` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-03-05; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | — |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** A Esplane é o **braço B2B da Você Constrói**, conforme descrito em duas mensagens canônicas listando os cases B2B Wake (Comercial Cross WAKE, 2025-12-17 e Wake <> Nairuz, 2026-03-20). A Você Constrói (B2C) entrou em produção pela Anymarket em 2025-08-22 (*"Você Constrói já liberado!"* — ANYMARKET & WAKE, 2025-08-22). Esplane também aparece de forma isolada como item em uma lista de URLs (Comercial Cross WAKE, 2026-03-05 18:47), confirmando que é uma loja Wake separada da loja-mãe B2C.
+
+**Solução:** Wake Commerce em frente **B2B dedicada** (loja própria, não área logada da Você Constrói). Atacado para profissionais de construção / lojistas — pareado com a operação B2C (Você Constrói) também em Wake.
+
+**Resultado:** Ativo. Sem dados de volumetria ou ticket no corpus.
+
+**Insights / lessons:**
+- Exemplo de **arquitetura B2B + B2C como duas lojas Wake separadas** (não área logada de uma única loja). Útil em pitch quando o cliente quer **isolamento total** entre frente B2C e atacado.
+- Reforça padrão "marca-mãe B2C entra primeiro, B2B vem depois" — Você Constrói liberada em 08/2025, Esplane consolidada como case nas listas de 12/2025 e 03/2026.
+
+---
+
+### CASE-052 — CVC Corp (franquias)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | CVC Corp |
+| **Setor** | turismo / franquias |
+| **Tipo de operação** | B2B — franquias comprando produtos da matriz |
+| **Status** | ✓ ativo (case-âncora de B2B + benchmark interno) |
+| **URL** | `plataformacvccorp.com.br` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-03-05; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | — |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** CVC Corp opera plataforma B2B em Wake para suas **franquias comprarem produtos da matriz** (Comercial Cross WAKE, 2025-12-17; Wake <> Nairuz, 2026-03-20). Citado como **um dos 4 cases B2B canônicos da Wake** junto com GOLD, Destro e A Fábrica (Comercial Cross WAKE, 2026-03-05: *"Quais outros cases que temos de B2B, além de: CVC, GOLD, Destro e A Fabrica?"*). Citado também como **benchmark de estrutura B2B "bem completa"** ao lado da Buddemeyer (CoreBiz & Wake, 2026-01-30: *"Temos Buddemeyer e CVC como cases legais de benchmark"* — contexto: estrutura de crédito, regionalização, mix de produto e listas de preço diferentes).
+
+**Solução:** Wake Commerce em modelo **matriz → rede de franquias** com lista de preço própria, mix de produto controlado e regras comerciais específicas por franquia.
+
+**Resultado:** Case de referência B2B Wake.
+
+**Insights / lessons:**
+- **Único case B2B do corpus com modelo matriz↔franquia** documentado — usar como prova quando o prospect for rede franqueada querendo centralizar compras das unidades.
+- A estrutura de **listas de preço por franquia + crédito + regionalização** é a combinação técnica que o time comercial cita como diferencial competitivo (mesmo combo em pitch Buddemeyer + CVC para CoreBiz em 2026-01-30).
+- Não confundir com **CVC** em outros contextos do corpus (Corporate Venture Capital — predominante em grupos de startups). A CVC Corp aqui é a operadora de turismo.
+
+---
+
+### CASE-053 — Yora (atacado kids)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Yora |
+| **Setor** | brinquedos / produtos kids — atacado |
+| **Tipo de operação** | B2B — atacado de produtos kids |
+| **Status** | ✓ ativo (citado em lista de cases B2B Wake) |
+| **URL** | `yoraatacado.com.br` ✓ confirmado em mensagens (Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | — |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** Yora aparece apenas nas duas listas canônicas de cases B2B Wake (Comercial Cross WAKE 2025-12-17; Wake <> Nairuz 2026-03-20) como *"atacado de produtos kids"*. Sem outras menções substantivas no corpus — case está vivo o suficiente para entrar nas listas internas, mas tem pouca atividade discutida.
+
+**Solução:** Wake Commerce em frente **atacado B2B puro** para vertical infantil.
+
+**Resultado:** ⚠ inferido — ativo mas com baixa visibilidade nas conversas operacionais.
+
+**Insights / lessons:**
+- Exemplo de **atacado B2B puro** (sem frente B2C correspondente no corpus) — modelo distinto do Esplane (Esplane é B2B sob marca B2C maior).
+- Útil para pitch a fabricantes/distribuidores de **brinquedos** que querem digitalizar o canal atacado sem entrar em B2C imediatamente.
+- Antes de usar publicamente, validar com account owner — única menção substantiva é em listas internas, sem conversas operacionais detalhadas.
+
+---
+
+### CASE-054 — Destro Macro (atacadista PR)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Destro (Destro Macro) |
+| **Setor** | atacado / distribuição (PR) |
+| **Tipo de operação** | B2B — atacadista do Paraná |
+| **Status** | ✓ ativo (case-âncora B2B) |
+| **URL** | `destromacro.com.br` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-03-05; 2025-09-03; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Stone (envolvida em projeto com cliente Destro — fluxo de pagamento) |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** Destro Macro é **atacadista do Paraná** e um dos **4 cases B2B canônicos** citados internamente (Comercial Cross WAKE, 2026-03-05: *"Quais outros cases que temos de B2B, além de: CVC, GOLD, Destro e A Fabrica?"*). URL também citada em listagem de clientes Wake do segmento alimentar/varejo regional (Comercial Cross WAKE, 2025-09-03 — junto com `mercadinhosaudavel.com.br`, `lojanovamix.com.br`, `saovito.com`, `ifrutus.com.br`, `lojazaeli.com.br`). Em 2025-07-14, projeto Wake & Stone identificou *"uma parte do fluxo que pode não estar corretamente mapeada"* envolvendo o cliente Destro — caso técnico aberto entre Wake e Stone.
+
+**Solução:** Wake Commerce em frente **atacado regional**. Integração com Stone como parte do stack de pagamento.
+
+**Resultado:** Case ativo de referência B2B. Caso técnico Wake↔Stone em 07/2025 foi sintoma de **fluxo de pedido cross-sistema ainda não totalmente mapeado** — alinhamento N1↔N2 necessário em projetos B2B com gateway externo.
+
+**Insights / lessons:**
+- Bom **case regional Sul** para pitch a atacadistas de outras regiões.
+- Combinação **atacadista regional + Stone** é a única do corpus — projetos similares devem prever **alinhamento técnico antecipado** entre Wake e o adquirente.
+
+---
+
+### CASE-055 — Buddemeyer (B2B em onboarding)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Buddemeyer (cama, mesa e banho premium) |
+| **Setor** | cama/mesa/banho |
+| **Tipo de operação** | B2B (em onboarding) + B2C (já ativo) |
+| **Status** | ⚠ B2B em onboarding (B2C contratado e ativo). Frente B2B "ainda em projeto" em 2026-03-05 |
+| **URL** | ⚠ fornecido pelo usuário, não confirmado em mensagens |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | Anymarket — suporte assistido (~R$ 1k–1,5k/mês — discutido como modelo conjunto com Casa Almeida em 2026-03-05) |
+| **Parceiros envolvidos** | Anymarket (CS), Omnichat (em prospecção via abertura de portas para Kelly Mateus / Alvacir Schulze / César Grossl — checklist de 2026-05-21) |
+| **Data da última menção** | 2026-05-21 |
+
+**Situação:** Buddemeyer assinou Wake Commerce em **2025-06-30** (Mavericks: *"Buddemeyer tá dentro!! Commerce (48,1k mrr + 21k setup)"*). A frente **B2B ainda estava em projeto** em 2026-03-05 (*"Buddemeyer B2B ainda em projeto"* — Comercial Cross WAKE) e citada em lista canônica como *"Buddemeyer em onboarding"* no recorte B2B (Comercial Cross WAKE 2025-12-17; Wake <> Nairuz 2026-03-20). Em 2026-03-05, time de CS (Math Almeida) discutia se a Anymarket podia oferecer suporte assistido (~R$ 1k/1,5k) à Buddemeyer — modelo discutido em paralelo ao da Casa Almeida (CASE-023). Citado como **benchmark de estrutura B2B "bem completa"** ao lado da CVC (CoreBiz & Wake, 2026-01-30). Em 2026-05-21, Omnichat planejava abordagem para abrir portas com gerentes/coordenadores da Buddemeyer.
+
+**Solução:** Wake Commerce (B2C) já contratado + frente **B2B em construção** (lista de preço, regionalização, mix). Anymarket para marketplaces. Suporte assistido Anymarket em discussão.
+
+**Resultado:** Frente B2C operacional; frente B2B em onboarding (status "em projeto" em 03/2026, sem evidência de go-live B2B publicado no corpus até 06/2026).
+
+**Insights / lessons:**
+- Junto com CVC, é o **case-benchmark interno** que o comercial usa para defender capacidade B2B da Wake em pitches enterprise (citado em pitch CoreBiz 2026-01-30).
+- Ticket cheio R$ 48,1k MRR + R$ 21k setup — operação Enterprise (presença na lista de "Enterprise - Não entra" de 2025-11-03 confirma o segmento, mas refere-se a uma rodada específica de canais que não recebeu essa conta).
+- B2B com Wake é projeto de prazo: contrato em 06/2025, B2B ainda em onboarding 9 meses depois (03/2026) — calibrar expectativas com prospects.
+
+---
+
+### CASE-056 — Gold Food Service
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Gold (Gold Food Service) |
+| **Setor** | food service / distribuição B2B |
+| **Tipo de operação** | B2B — distribuição food service |
+| **Status** | ✓ ativo (case-âncora B2B) |
+| **URL** | `goldfoodservice.com.br` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-03-05; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | — |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** Gold Food Service é **um dos 4 cases B2B canônicos da Wake** (Comercial Cross WAKE, 2026-03-05: *"Quais outros cases que temos de B2B, além de: CVC, GOLD, Destro e A Fabrica?"*). Aparece apenas nas listas canônicas — sem conversas operacionais detalhadas no corpus.
+
+**Solução:** Wake Commerce em frente **B2B food service**.
+
+**Resultado:** ⚠ inferido ativo — sem volumetria ou ticket no corpus.
+
+**Insights / lessons:**
+- **Único case B2B do corpus na vertical food service** — usar em pitch para distribuidores/atacadistas de alimentos/bebidas.
+- Combinado com Soubeef (CASE-036) cobre dois ângulos diferentes em food: distribuição B2B (Gold) vs. produto cárneo de consumo (Soubeef).
+
+---
+
+### CASE-057 — A Fábrica
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | A Fábrica |
+| **Setor** | ⚠ status desconhecido (URLs sugerem indústria/fabricante de bens duráveis, não confirmado em mensagem) |
+| **Tipo de operação** | B2B (case-âncora) — possível indústria → revenda |
+| **Status** | ✓ ativo (case-âncora B2B) |
+| **URL** | `afabrica.com` + `checkout.afabrica.com` ✓ confirmado em mensagens (Comercial Cross WAKE 2026-03-05 18:50; Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | — |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** A Fábrica é **um dos 4 cases B2B canônicos da Wake** (Comercial Cross WAKE, 2026-03-05: *"Quais outros cases que temos de B2B, além de: CVC, GOLD, Destro e A Fabrica?"*). A presença de **subdomínio dedicado de checkout** (`checkout.afabrica.com`) é confirmação técnica de arquitetura B2B com checkout customizado.
+
+**Solução:** Wake Commerce em frente B2B com **checkout em subdomínio dedicado** — padrão de arquitetura que indica fluxo de fechamento B2B distinto do B2C (lista de preço, condições, autenticação).
+
+**Resultado:** Ativo. Sem outras conversas operacionais substantivas no corpus.
+
+**Insights / lessons:**
+- **Único case B2B do corpus que documenta uso explícito de `checkout.<dominio>`** — usar como referência técnica quando prospect perguntar sobre arquitetura de checkout B2B customizada.
+- Confirma que a Wake suporta **subdomínio de checkout próprio** — relevante em pitches onde o cliente quer separar fluxo de fechamento B2B do site institucional/catálogo.
+
+---
+
+### CASE-058 — Unitoys
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Unitoys |
+| **Setor** | brinquedos |
+| **Tipo de operação** | B2B — citado na lista canônica B2B; recorte interno também o trata como referência em brinquedos |
+| **Status** | ✓ ativo (assinado 2026-01-21) |
+| **URL** | `unitoys.com.br` ✓ confirmado em mensagens (Wake <> Nairuz 2026-03-20) |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Marketplace setup** | — |
+| **Parceiros envolvidos** | Série//A (visitou cliente em 2026-03-02) |
+| **Data da última menção** | 2026-03-20 |
+
+**Situação:** Unitoys assinou em **2026-01-21** — *"Unitoys assinado ✍🏻 Commerce (5k mrr + 24k setup)"* (Comercial Cross WAKE). Em 2026-03-02, Série//A visitou o cliente. Em 2026-03-17, citada como referência ao perguntarem *"além da unitoys, quem mais de brinquedos?"* (Comercial Cross WAKE) — confirma que é o caso de referência interno na vertical brinquedos. Aparece na lista B2B canônica de 2026-03-20 (Wake <> Nairuz).
+
+**Solução:** Wake Commerce. Ticket SMB (**R$ 5k MRR + R$ 24k setup**).
+
+**Resultado:** Ativo. Assinatura recente, agência Série//A no relacionamento.
+
+**Insights / lessons:**
+- **Único case de referência em brinquedos** no corpus interno — usar em pitches a fabricantes/distribuidores do segmento.
+- Ticket R$ 5k MRR sinaliza SMB — combinar com Yora (CASE-053) para cobrir os dois recortes do vertical (brinquedos varejo Wake + atacado kids).
+- A presença na lista B2B junto com Yora sugere que o recorte interno "B2B" inclui também marcas com forte canal atacado, não apenas operações puramente atacadistas.
+
+---
+
+### CASE-059 — Editora Fórum (publishers)
+
+| Campo | Valor |
+|---|---|
+| **Cliente** | Editora Fórum |
+| **Setor** | editorial / publishers / conteúdo jurídico-empresarial |
+| **Tipo de operação** | B2B + B2C — venda de publicações/assinaturas |
+| **Status** | ✓ ativo (em projeto técnico em 2025-08; status final 06/2026 não confirmado no corpus) |
+| **URL** | `negocios.forumconhecimento.com.br` ⚠ fornecido pelo usuário, não confirmado em mensagens |
+| **Plataforma anterior** | — |
+| **ERP** | — |
+| **Pagamento** | PagBank (no novo checkout Headless) |
+| **Parceiros envolvidos** | Benova (agência de implementação) |
+| **Data da última menção** | 2025-08-26 |
+
+**Situação:** Editora Fórum é cliente Wake em projeto de **Pagbank no novo checkout Headless** conduzido pela agência **Benova** (Wake <> Benova, 2025-08-26): *"Integração Pagbank no novo checkout Headless está 100%? (Cliente Editora Fórum)"* — resposta: *"Ainda não está 100% mas já estão trabalhando nos ajustes. Tem uma entrega (Pix) prevista para início de Setembro e outra (CC) mais para o fim do mês"*. Em 2025-08-26, conversa explícita confirma a relação Editora Fórum ↔ Pagbank no projeto.
+
+**Solução:** Wake Commerce com **checkout Headless** + integração **PagBank** (Pix + Cartão de Crédito). Implementação conduzida pela Benova.
+
+**Resultado:** ⚠ Em 2025-08-26, integração Pagbank tinha entregas previstas para 09/2025 (Pix) e fim de 09/2025 (CC). Status atual após essas datas não consta no corpus — validar com account owner.
+
+**Insights / lessons:**
+- **Única editora/publisher** identificada no corpus como cliente Wake — vertical greenfield para a base de cases.
+- Combinação **checkout Headless + PagBank** é arquitetura relevante para pitch a publishers que vendem assinaturas / produtos digitais com necessidade de fluxo de pagamento próprio.
+- Caso técnico em 2025-08 abriu thread sobre maturidade da integração Pagbank no checkout Headless — útil em discussões de homologação de novos gateways.
+
+---
+
+### Programa de afiliados — referências cruzadas
+
+A Wake não tem "produto de afiliados" separado. Programas de afiliados/influencer marketing são montados sobre **dois recursos da plataforma**:
+
+1. **Painel Wake — módulo de campanha/cupom**: *"módulo de campanha/cupom integrado na plataforma. Ele é bem completo, envolve variáveis para estratégia do cliente com os influ/afiliado"* (Monitfy & Wake, 2026-05-18). Limitação conhecida: a API correspondente é mais restrita que o painel — operações pelo painel são mais ricas que via integração programática.
+2. **StoreFront API — `partner/afiliado` no carrinho**: *"Estamos usando a StoreFront API da Wake. Utilizamos duas mutations para gerar a url do novo carrinho. CheckoutClone (para clonar um carrinho prévio, incluindo o `partner/afiliado`) e CheckoutAddMetadata para colocar as nossas UTM no novo carrinho"* (Uble & Wake, 2026-01-19). Padrão técnico documentado para preservar identificação do afiliado/parceiro ao longo da sessão de checkout.
+
+A referência interna canônica que enumera os três cases de afiliados Wake é **Comercial Cross WAKE, 2025-12-17**:
+
+> *"Ybera / Shoulder para funcionários / BAW com influenciadores"*
+
+| Cliente | Modelo de afiliados | Caso completo |
+|---|---|---|
+| **Shoulder** | Programa de afiliados **para funcionários** (rede de vendedoras + colaboradoras como afiliadas) | **CASE-004** — Shoulder |
+| **BAW** | Programa de afiliados com **influenciadores** | **CASE-017** — Baw |
+| **Ybera** | Cliente em **negociação concorrida com VTEX** que **usa programa de afiliados** como parte do diferencial operacional | **CASE-047** — Ybera |
+
+**Insights / lessons:**
+- A Wake **não vende** "produto de afiliados" — vende plataforma + StoreFront API. O programa é construído pela marca (com ou sem agência), explorando cupom + atribuição de `partner/afiliado` via StoreFront.
+- Os três casos cobrem **três modelos distintos** de programa de afiliados: funcionários internos (Shoulder), influenciadores externos (BAW), e blend operacional dentro de relacionamento direto-com-consumidor (Ybera). Útil em pitch a marca que pergunta *"vocês suportam programa de afiliados?"* — resposta: "sim, e temos três modelos diferentes em produção".
+- Limitação atual a sinalizar em discoveries: **gestão de promoções via API é limitada** (Monitfy & Wake, 2026-05-18) — para programas que exigem orquestração programática complexa, validar escopo técnico antes de fechar.
+- Em conversas comerciais externas, há marcas adjacentes citando a mesma necessidade — *"a ideia de ter uma área de afiliados organizada"* (Ello Moda, Nova Oportunidade 2026-05-08, usando DLK como benchmark). Sinaliza que **programa de afiliados estruturado é argumento de venda crescente** na vertical moda em 2026.
+
+---
+
+### Verificação — B2B, Afiliados e Verticais Especializadas
+
+| Claim | Status | Query (LIKE) | Evidence |
+|---|---|---|---|
+| Lista canônica de cases B2B Wake é "CVC / GOLD / Destro / A Fabrica" | ✓ verificado | `%B2B%` + `%CVC%` + `%Destro%` | Comercial Cross WAKE, 2026-03-05 17:42 |
+| Esplane é B2B da Você Constrói | ✓ verificado | `%Esplane%` (8 hits) | Comercial Cross WAKE 2025-12-17 + Wake <> Nairuz 2026-03-20 |
+| CVC opera plataforma para franquias comprarem da matriz | ✓ verificado | `%CVC%franquia%` + `%CVC%matriz%` | Comercial Cross WAKE 2025-12-17; Wake <> Nairuz 2026-03-20 |
+| CVC + Buddemeyer são benchmark interno de B2B "completo" (crédito, regionalização, listas de preço) | ✓ verificado | `%CVC%benchmark%`; `%Buddemeyer%CVC%` | CoreBiz & Wake, 2026-01-30 17:21 |
+| Yora é atacado de produtos kids | ✓ verificado | `%Yora%` | Comercial Cross WAKE 2025-12-17; Wake <> Nairuz 2026-03-20 |
+| Destro é atacadista do PR | ✓ verificado | `%Destro%PR%`; `%Destro Macro%` | Wake <> Nairuz, 2026-03-20 |
+| Buddemeyer assinou Commerce R$ 48,1k MRR + R$ 21k setup em 2025-06-30 | ✓ verificado | `%Buddemeyer%MRR%` | Mavericks + Comercial Cross WAKE, 2025-06-30 19:06 |
+| Buddemeyer B2B "ainda em projeto" em 2026-03 | ✓ verificado | `%Buddemeyer%B2B%` | Comercial Cross WAKE, 2026-03-05 18:44 |
+| Gold Food Service é case B2B Wake | ✓ verificado | `%Gold Food%`; `%goldfoodservice%` | Comercial Cross WAKE 2026-03-05 18:47 |
+| A Fábrica usa `checkout.afabrica.com` (subdomínio dedicado) | ✓ verificado | `%afabrica%`; `%checkout.afabrica%` | Comercial Cross WAKE 2026-03-05 18:50 |
+| Unitoys assinou R$ 5k MRR + R$ 24k setup em 2026-01-21 | ✓ verificado | `%Unitoys%assinad%` | Comercial Cross WAKE, 2026-01-21 13:18 |
+| Unitoys é referência interna para vertical brinquedos | ✓ verificado | `%unitoys%brinquedo%` | Comercial Cross WAKE, 2026-03-17 20:54 |
+| Editora Fórum é cliente Wake em projeto Pagbank + checkout Headless via Benova | ✓ verificado | `%Editora Fórum%` (5 hits) | Wake <> Benova, 2025-08-26 |
+| Wake suporta programa de afiliados via StoreFront API (CheckoutClone + CheckoutAddMetadata) | ✓ verificado | `%afiliado%CheckoutClone%`; `%partner/afiliado%` | Uble & Wake, 2026-01-19 13:10 |
+| Wake tem módulo de campanha/cupom no painel para afiliados, mas API é limitada | ✓ verificado | `%campanha%cupom%`; `%influ%afiliado%` | Monitfy & Wake, 2026-05-18 16:58 e 20:46 |
+| Os 3 cases Wake de afiliados são Ybera / Shoulder funcionários / BAW influenciadores | ✓ verificado | `%Ybera%Shoulder%BAW%`; `%Shoulder para funcionários%` | Comercial Cross WAKE, 2025-12-17 19:16 |
+| Você Constrói está usando Anymarket desde 2025-08 | ✓ verificado | `%Você Constrói%liberado%` | ANYMARKET & WAKE, 2025-08-22 15:34 |
+| URL `forumconhecimento.com.br` é da Editora Fórum | ⚠ fornecido pelo usuário, não confirmado em mensagens | `%forumconhecimento%` (0 hits) | n/a — URL não citada em mensagens do corpus |
+| URL `negocios.forumconhecimento.com.br` é da Editora Fórum | ⚠ fornecido pelo usuário, não confirmado em mensagens | `%negocios.forumconhecimento%` (0 hits) | n/a |
+| URL da Buddemeyer | ⚠ fornecido pelo usuário, não confirmado em mensagens | n/a | URL não citada nas mensagens analisadas |
 
 ---
 
@@ -1059,6 +1375,14 @@ Casos abertos em 2026-05 distribuídos entre múltiplas agências da carteira. V
 - Abbiamo & Wake
 - EBI & Wake (DEV)
 - Visie & Wake
+- Wake <> Benova (Editora Fórum)
+- Wake & Stone — [work] (caso Destro)
+- Wake + CRMBonus | Parcerias
+- Monitfy & Wake (afiliados / API)
+- Uble & Wake (StoreFront API + afiliados)
+- CoreBiz & Wake (benchmark B2B Buddemeyer + CVC)
+- Wake & Omnichat (checklist Buddemeyer)
+- Anymarket + Wake (comercial)
 
 ---
 
@@ -1104,7 +1428,7 @@ WHERE c.jid LIKE '%@g.us'
 ORDER BY m.timestamp DESC;
 ```
 
-Total de queries executadas para construir este catálogo: **~28** combinações distintas de termos, mais ~12 buscas de validação cruzada.
+Total de queries executadas para construir este catálogo: **~28** combinações distintas de termos, mais ~12 buscas de validação cruzada. **Extensão B2B/Afiliados/Editoras (CASE-051–059)**: 11 queries adicionais (Esplane, Você Constrói, CVC franquias/matriz/B2B, Yora, Destro + Wake/Stone, Buddemeyer, Gold Food, A Fabrica + checkout, Unitoys, Editora Fórum, afiliados + Ybera/Shoulder/BAW, afiliados gerais).
 
 ---
 
