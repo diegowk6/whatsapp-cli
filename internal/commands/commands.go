@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/vicentereig/whatsapp-cli/internal/client"
+	"github.com/vicentereig/whatsapp-cli/internal/importer"
 	"github.com/vicentereig/whatsapp-cli/internal/output"
 	"github.com/vicentereig/whatsapp-cli/internal/store"
 	"github.com/vicentereig/whatsapp-cli/internal/types"
@@ -133,6 +134,33 @@ func (a *App) ListChats(query *string, limit, page int) string {
 	}
 
 	return output.Success(chats)
+}
+
+// ImportMacOS imports chats and messages from the WhatsApp macOS app's SQLite
+// database into the local store.
+func (a *App) ImportMacOS(sourcePath string) string {
+	if sourcePath == "" {
+		sourcePath = importer.DefaultMacOSSourcePath()
+	}
+	if sourcePath == "" {
+		return output.Error(fmt.Errorf("could not determine WhatsApp macOS data path; use --source to specify it"))
+	}
+
+	chats, messages, err := importer.ImportMacOS(sourcePath, a.store, func(_, msgs int) {
+		if msgs > 0 {
+			fmt.Fprintf(os.Stderr, "\r💬 Imported %d messages...", msgs)
+		}
+	})
+	if err != nil {
+		return output.Error(err)
+	}
+
+	fmt.Fprintln(os.Stderr, "") // newline after progress line
+	return output.Success(map[string]interface{}{
+		"chats_imported":    chats,
+		"messages_imported": messages,
+		"source":            sourcePath,
+	})
 }
 
 // recipientToJID normalizes a recipient string to a full JID.

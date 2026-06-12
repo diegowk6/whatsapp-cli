@@ -48,6 +48,7 @@ Commands:
   send --to RECIPIENT --message TEXT                     Send a text message
   send --to RECIPIENT --image PATH [--caption TEXT]      Send an image
   media download --message-id ID [--chat JID] [--output PATH]   Download media for a message
+  import macos [--source DIR]       Import chats & messages from WhatsApp macOS app
   version                           Print CLI version information
 
 Global Options:
@@ -61,6 +62,8 @@ Examples:
   whatsapp-cli contacts search --query "John"
   whatsapp-cli send --to 1234567890 --message "Hello"
   whatsapp-cli send --to 1234567890@g.us --message "Hello group"
+  whatsapp-cli import macos            # Import from default macOS WhatsApp location
+  whatsapp-cli import macos --source ~/path/to/WhatsApp.shared
 `
 
 // extractGlobalFlags pulls --store from anywhere in the arg list,
@@ -250,6 +253,15 @@ func main() {
 			exitJSON("--message-id required")
 		}
 		result = app.DownloadMedia(ctx, *messageID, optionalStr(*chatJID), *outputPath)
+
+	case "import":
+		requireSubcommand(args, "import", []string{"macos"})
+		importCmd := flag.NewFlagSet("import macos", flag.ExitOnError)
+		source := importCmd.String("source", "", "path to WhatsApp macOS data directory (default: auto-detect)")
+		if len(args) > 2 {
+			importCmd.Parse(args[2:])
+		}
+		result = app.ImportMacOS(*source)
 
 	default:
 		fmt.Fprintf(os.Stderr, `{"success":false,"data":null,"error":"Unknown command: %s"}
